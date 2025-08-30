@@ -55,11 +55,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Typing animation
 const typedTextElement = document.getElementById('typed-text');
 const textArray = [
-    'EdTech Leader',
-    'Community Builder',
+    'Tech Enthusiast',
+    'Aspiring Finance Professional',
     'Project Coordinator',
-    'Content Strategist',
-    'Team Manager'
+    'EdTech Community Builder'
 ];
 let textIndex = 0;
 let charIndex = 0;
