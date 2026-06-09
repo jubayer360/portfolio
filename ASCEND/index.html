@@ -2,10 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1_Js1SKtUlgAE2nOJg1x99rxSUjJ1rhgS/view?usp=sharing">
-    <title>Redirecting to CV...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #1a1a1a;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+            background-color: #242424;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            z-index: 10;
+        }
+        .download-btn {
+            background-color: #3b82f6;
+            color: white;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease-in-out;
+            box-shadow: 0 2px 4px rgba(59, 130, 246, 0.4);
+        }
+        .download-btn:hover {
+            background-color: #2563eb;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.5);
+        }
+        .iframe-container {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <p>If you are not redirected automatically, please <a href="https://drive.google.com/file/d/1_Js1SKtUlgAE2nOJg1x99rxSUjJ1rhgS/view?usp=sharing">click here</a> to view the CV.</p>
+    <div class="header">
+        <a href="https://drive.google.com/uc?export=download&id=1_Js1SKtUlgAE2nOJg1x99rxSUjJ1rhgS" class="download-btn" target="_blank" rel="noopener noreferrer">
+            Download CV
+        </a>
+    </div>
+    <div class="iframe-container">
+        <iframe src="https://drive.google.com/file/d/1_Js1SKtUlgAE2nOJg1x99rxSUjJ1rhgS/preview" allow="autoplay"></iframe>
+    </div>
 </body>
 </html>
