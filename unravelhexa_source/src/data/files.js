@@ -3331,7 +3331,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -3587,7 +3587,8 @@ function escapeHtml_(text) {
     </p>
 
     <p style="margin-bottom: 18px; font-size: 16px; line-height: 1.6; color: #334155;">
-      Your presence would mean the world to us and to every participant who has worked tirelessly to reach this stage. We
+      Your presence would mean the world to us and to every participant who has worked tirelessly to reach this stage.
+      We
       look forward to sharing this special evening with you.
     </p>
 
@@ -3668,8 +3669,7 @@ function escapeHtml_(text) {
   </div>
 </body>
 
-</html>
-`
+</html>`
   },
   {
     id: "final-round-study-abroad-partner-mail",
@@ -3898,7 +3898,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -4031,7 +4031,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -4164,7 +4164,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -4300,7 +4300,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -4434,7 +4434,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -4569,7 +4569,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Event Time:</strong> 2:00 PM
@@ -4718,7 +4718,7 @@ function escapeHtml_(text) {
             </li>
             <li style="margin-bottom: 8px;">
               <strong>Location:</strong> <a href="https://maps.app.goo.gl/XijA7fdeQizeTpsU8" target="_blank"
-                style="color: #d72027; text-decoration: none; font-weight: 600;">View on Google Map</a>
+                style="color: #1476ed; text-decoration: none; font-weight: 600;">View on Google Map</a>
             </li>
           </ul>
         </td>
