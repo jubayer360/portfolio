@@ -1749,17 +1749,30 @@ body {
   .back-to-portfolio-btn {
     top: auto;
     right: 24px;
-    padding: 10px 16px;
-    border-radius: 50px;
-    font-size: 0.72rem;
+    padding: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    justify-content: center;
+  }
+  
+  .back-to-workflow-btn span,
+  .back-to-portfolio-btn span {
+    display: none;
+  }
+
+  .back-to-workflow-btn svg,
+  .back-to-portfolio-btn svg {
+    width: 20px;
+    height: 20px;
   }
   
   .back-to-workflow-btn {
-    bottom: 80px;
+    bottom: 84px;
   }
   
   .back-to-portfolio-btn {
-    bottom: 130px;
+    bottom: 144px;
   }
 
   /* Hero popup mobile */
