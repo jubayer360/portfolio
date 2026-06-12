@@ -733,9 +733,9 @@ body {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(10, 10, 18, 0.82);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(10, 10, 18, 0.65);
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1003,20 +1003,34 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* ── Workflow Hero Header ── */
-.wf-hero-header {
+/* ── Unified Top Section ── */
+.wf-top-section {
   position: relative;
   background: var(--bg-header);
-  padding: 32px 24px 20px; 
-  text-align: center;
   overflow: hidden;
 }
 
+.wf-top-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(245, 130, 32, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* ── Workflow Hero Header ── */
+.wf-hero-header {
+  position: relative;
+  padding: 32px 24px 16px; 
+  text-align: center;
+  z-index: 1;
+}
+
 .wf-hero-logo {
-  max-width: 320px; 
+  max-width: 280px; 
   width: 100%;
   height: auto;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .wf-hero-bg-shapes {
@@ -1386,20 +1400,12 @@ body {
 
 /* ── Impact Section ── */
 .wf-impact {
-  background: var(--bg-header);
-  padding: 0 24px 32px; 
+  padding: 0 16px 20px; 
   position: relative;
-  overflow: hidden;
+  z-index: 1;
 }
 
-.wf-impact::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at 50% 0%, rgba(245, 130, 32, 0.05) 0%, transparent 60%);
-  pointer-events: none;
-}
+/* Removed background radial gradient from .wf-impact as it is now in .wf-top-section */
 
 .wf-impact-inner {
   position: relative;
@@ -1413,18 +1419,18 @@ body {
 .wf-impact-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 12px;
 }
 
 .wf-impact-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  padding: 20px 16px; 
+  padding: 16px 12px; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px; 
+  gap: 6px; 
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -1455,32 +1461,33 @@ body {
   background: linear-gradient(90deg, transparent, rgba(245, 130, 32, 0.3), transparent);
 }
 
-.impact-icon {
-  width: 40px;
-  height: 40px;
+.wf-impact-icon {
+  width: 36px;
+  height: 36px;
   border-radius: 10px;
-  background: linear-gradient(135deg, rgba(245, 130, 32, 0.15), rgba(215, 32, 39, 0.1));
+  background: rgba(245, 130, 32, 0.1);
+  border: 1px solid rgba(245, 130, 32, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.impact-icon svg {
-  width: 20px;
-  height: 20px;
+.wf-impact-icon svg {
+  width: 18px;
+  height: 18px;
   color: var(--accent-orange);
 }
 
 .wf-impact-value {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
   color: var(--text-on-dark);
   line-height: 1;
 }
 
 .wf-impact-label {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: rgba(255,255,255,0.5);
   text-transform: uppercase;
   letter-spacing: 0.05em;

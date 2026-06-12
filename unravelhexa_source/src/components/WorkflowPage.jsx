@@ -267,43 +267,46 @@ export default function WorkflowPage() {
         </div>
       </header>
 
-      {/* Hero Header */}
-      <section className="wf-hero-header">
-        <div className="wf-hero-bg-shapes">
-          <div className="wf-hero-shape wf-hero-shape-1" />
-          <div className="wf-hero-shape wf-hero-shape-2" />
-          <div className="wf-hero-shape wf-hero-shape-3" />
-        </div>
-        <div className="wf-hero-content">
-          <img
-            src={heroLogo}
-            alt="Unravel Hexa"
-            className="wf-hero-logo"
-          />
-          <h1 className="wf-hero-title">Operations Workflow</h1>
-          <p className="wf-hero-desc">
-            Every pipeline below was designed, coded, and automated from scratch to run Unravel Hexa,
-            north-Bengal's biggest inter-university case competition.
-          </p>
-        </div>
-      </section>
-
-      {/* Impact Section (Moved to top) */}
-      <section className="wf-impact wf-reveal">
-        <div className="wf-impact-inner">
-          <div className="wf-impact-grid">
-            {impactStats.map((stat) => (
-              <div key={stat.label} className="wf-impact-card wf-reveal">
-                <ImpactIcon type={stat.icon} />
-                <span className="wf-impact-value">{stat.value}</span>
-                <span className="wf-impact-label">{stat.label}</span>
-              </div>
-            ))}
+      {/* Unified Top Section for Hero & Impact */}
+      <div className="wf-top-section">
+        {/* Hero Section */}
+        <header className="wf-hero-header">
+          <div className="wf-hero-bg-shapes">
+            <div className="wf-hero-shape wf-hero-shape-1" />
+            <div className="wf-hero-shape wf-hero-shape-2" />
+            <div className="wf-hero-shape wf-hero-shape-3" />
           </div>
-        </div>
-      </section>
+          <div className="wf-hero-content">
+            <img
+              src={heroLogo}
+              alt="Unravel Hexa"
+              className="wf-hero-logo"
+            />
+            <h1 className="wf-hero-title">Operations Workflow</h1>
+            <p className="wf-hero-desc">
+              Every pipeline below was designed, coded, and automated from scratch to run Unravel Hexa,
+              north-Bengal's biggest inter-university case competition.
+            </p>
+          </div>
+        </header>
 
-      {/* Timeline */}
+        {/* Impact Section */}
+        <section className="wf-impact wf-reveal">
+          <div className="wf-impact-inner">
+            <div className="wf-impact-grid">
+              {impactStats.map((stat) => (
+                <div key={stat.label} className="wf-impact-card wf-reveal">
+                  <ImpactIcon type={stat.icon} />
+                  <span className="wf-impact-value">{stat.value}</span>
+                  <span className="wf-impact-label">{stat.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Main Timeline */}
       <main className="wf-timeline-container">
         <div className="wf-timeline-line" />
 
