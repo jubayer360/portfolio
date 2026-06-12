@@ -1,9 +1,11 @@
+import headerLogo from '../assets/logos/header_logo.png';
+
 export default function Header({ fileCount }) {
   return (
     <div className="header-section">
       <div className="header-content">
         <img
-          src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F"
+          src={headerLogo}
           alt="Unravel Hexa"
           className="header-logo"
         />

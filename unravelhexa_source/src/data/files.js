@@ -802,7 +802,7 @@ export const portfolioFiles = [
   <div class="container">
     <header>
       <div class="logo-container">
-        <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo"
+        <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
           class="logo">
       </div>
       <p style="opacity: 0.5; font-size: 0.7rem;">Registration Form</p>
@@ -1121,7 +1121,7 @@ function doGet(e) {
             <tr>
                 <td align="center" style="padding: 10px 0 5px; position: relative;">
                     <div style="position: relative; display: inline-block;">
-                        <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl"
+                        <img src="/unravel_hexa/logos/hero_logo.png"
                             alt="Unravel Logo" style="height: auto; width: 350px; max-width: 100%; display: block;" />
                     </div>
                 </td>
@@ -2057,7 +2057,7 @@ function doGet(e) {
 <body>
   <div class="header">
     <div class="logo-container">
-      <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo" class="logo">
+      <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo" class="logo">
     </div>
     <p class="subtitle">Submit your Round 1 solution
       below.</p>
@@ -2610,7 +2610,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -2744,7 +2744,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3260,7 +3260,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3418,7 +3418,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3556,7 +3556,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3694,7 +3694,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3830,7 +3830,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3985,7 +3985,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4118,7 +4118,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4251,7 +4251,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4387,7 +4387,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4521,7 +4521,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4656,7 +4656,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -5451,7 +5451,7 @@ function escapeHtml_(text) {
 <body>
     <div class="header">
         <div class="logo-container">
-            <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
                 class="logo">
         </div>
     </div>
@@ -5976,7 +5976,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -6084,7 +6084,7 @@ function sanitizeFileName(name) {
             <tr>
                 <td align="center" style="padding: 10px 0 5px; position: relative;">
                     <div style="position: relative; display: inline-block;">
-                        <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl"
+                        <img src="/unravel_hexa/logos/hero_logo.png"
                             alt="Unravel Logo" style="height: auto; width: 350px; max-width: 100%; display: block;" />
                     </div>
                 </td>
@@ -6301,7 +6301,7 @@ function sendEvaluationSheetEmail() {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -6981,7 +6981,7 @@ function sendThankYouEmails() {
 <body>
     <div class="header">
         <div class="logo-container">
-            <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
                 class="logo">
         </div>
     </div>
@@ -7449,7 +7449,7 @@ function sanitizeFileName(name) {
             <tr>
                 <td align="center" style="padding: 10px 0 5px; position: relative;">
                     <div style="position: relative; display: inline-block;">
-                        <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl"
+                        <img src="/unravel_hexa/logos/hero_logo.png"
                             alt="Unravel Logo" style="height: auto; width: 350px; max-width: 100%; display: block;" />
                     </div>
                 </td>
@@ -8159,7 +8159,7 @@ function sanitizeFileName(name) {
 <body>
   <div class="header">
     <div class="logo-container">
-      <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo" class="logo">
+      <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo" class="logo">
     </div>
   </div>
   <div class="form-container">
@@ -8671,7 +8671,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -8847,7 +8847,7 @@ const WS_EMAIL_HTML = \`<html>
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -9123,7 +9123,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
+            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
