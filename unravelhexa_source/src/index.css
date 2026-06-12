@@ -1379,7 +1379,7 @@ body {
 .wf-reveal {
   opacity: 0;
   transform: translateY(28px);
-  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
   transition-delay: var(--step-delay, 0s);
 }
 
@@ -1614,39 +1614,62 @@ body {
   color: var(--text-muted);
 }
 
-/* ── Back to Workflow Button ── */
-.back-to-workflow-btn {
+/* ── Back Buttons ── */
+.back-to-workflow-btn,
+.back-to-portfolio-btn {
   position: fixed;
   top: 16px;
-  right: 16px;
   z-index: 150;
   display: inline-flex;
   align-items: center;
   gap: 6px;
   padding: 9px 18px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(245, 130, 32, 0.9), rgba(215, 32, 39, 0.85));
+  border-radius: 50px;
   color: white;
   font-family: 'Inter', sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 20px rgba(215, 32, 39, 0.3);
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   letter-spacing: -0.01em;
 }
 
-.back-to-workflow-btn svg {
+.back-to-workflow-btn {
+  right: 16px;
+  background: linear-gradient(135deg, rgba(245, 130, 32, 0.9), rgba(215, 32, 39, 0.85));
+  box-shadow: 0 4px 20px rgba(215, 32, 39, 0.3);
+}
+
+.back-to-portfolio-btn {
+  right: 130px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-workflow-btn svg,
+.back-to-portfolio-btn svg {
   width: 15px;
   height: 15px;
 }
 
-.back-to-workflow-btn:hover {
+.back-to-workflow-btn:hover,
+.back-to-portfolio-btn:hover {
   transform: translateY(-2px) scale(1.04);
+}
+
+.back-to-workflow-btn:hover {
   box-shadow: 0 8px 28px rgba(215, 32, 39, 0.45);
 }
 
-.back-to-workflow-btn:active {
+.back-to-portfolio-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-workflow-btn:active,
+.back-to-portfolio-btn:active {
   transform: translateY(0) scale(0.97);
 }
 
@@ -1721,14 +1744,22 @@ body {
     padding: 0 20px 32px;
   }
 
-  /* Back button: bottom-right on mobile, above sidebar toggle */
-  .back-to-workflow-btn {
+  /* Back buttons: bottom-right on mobile, above sidebar toggle */
+  .back-to-workflow-btn,
+  .back-to-portfolio-btn {
     top: auto;
-    bottom: 80px;
     right: 24px;
     padding: 10px 16px;
     border-radius: 50px;
     font-size: 0.72rem;
+  }
+  
+  .back-to-workflow-btn {
+    bottom: 80px;
+  }
+  
+  .back-to-portfolio-btn {
+    bottom: 130px;
   }
 
   /* Hero popup mobile */

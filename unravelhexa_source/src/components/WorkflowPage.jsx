@@ -235,6 +235,12 @@ export default function WorkflowPage() {
   }, []);
 
   useEffect(() => {
+    // Reveal Phase 01 immediately after a tiny delay before scrolling
+    const timer = setTimeout(() => {
+      const phase1Elements = document.querySelectorAll('.wf-phase-01, .wf-phase-01 .wf-reveal');
+      phase1Elements.forEach(el => el.classList.add('revealed'));
+    }, 100);
+
     // Intersection Observer for scroll-reveal animations
     observerRef.current = new IntersectionObserver(
       (entries) => {
@@ -245,13 +251,21 @@ export default function WorkflowPage() {
           }
         });
       },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      { threshold: 0.05, rootMargin: '0px 0px 0px 0px' }
     );
 
     const elements = document.querySelectorAll('.wf-reveal');
-    elements.forEach((el) => observerRef.current?.observe(el));
+    elements.forEach((el) => {
+      // Don't observe phase 1 elements if we want them instant
+      if (!el.closest('.wf-phase-01') && !el.classList.contains('wf-phase-01')) {
+        observerRef.current?.observe(el);
+      }
+    });
 
-    return () => observerRef.current?.disconnect();
+    return () => {
+      clearTimeout(timer);
+      observerRef.current?.disconnect();
+    };
   }, []);
 
   return (
@@ -311,7 +325,7 @@ export default function WorkflowPage() {
         <div className="wf-timeline-line" />
 
         {workflowPhases.map((phase, phaseIdx) => (
-          <section key={phase.phase} className="wf-phase wf-reveal" style={{ '--phase-color': phase.color }}>
+          <section key={phase.phase} className={`wf-phase wf-reveal wf-phase-${phase.phaseNum}`} style={{ '--phase-color': phase.color }}>
             {/* Phase Header */}
             <div className="wf-phase-header">
               <span className="wf-phase-num">{phase.phaseNum}</span>
@@ -383,13 +397,22 @@ export default function WorkflowPage() {
           <div className="wf-cta-inner">
             <h2 className="wf-cta-title">Curious about the implementation?</h2>
             <p className="wf-cta-desc">Explore the exact codebase and scripts that powered these automations.</p>
-            <button className="wf-cta-btn" onClick={() => navigate('/IDE')}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="16 18 22 12 16 6" />
-                <polyline points="8 6 2 12 8 18" />
-              </svg>
-              Check the Codebase
-            </button>
+            <div style={{ display: 'flex', gap: '16px', justifyContent: 'center', flexWrap: 'wrap', marginTop: '24px' }}>
+              <button className="wf-cta-btn" onClick={() => navigate('/IDE')}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                Check the Codebase
+              </button>
+              <a href="https://jubayer.pro" className="wf-cta-btn" style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', textDecoration: 'none' }}>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg>
+                Visit Portfolio Homepage
+              </a>
+            </div>
           </div>
         </section>
 
