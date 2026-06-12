@@ -10,7 +10,7 @@ export default function Header({ fileCount }) {
           className="header-logo"
         />
         <div className="header-text">
-          <h1 className="header-title">The workflow automated by Jubayer Ahmad in Unravel Hexa</h1>
+          <h1 className="header-title">The Workflow Automation of Unravel Hexa</h1>
           <p className="header-subtitle">Registration, submissions, emails, and mailer automations built end-to-end</p>
         </div>
       </div>
