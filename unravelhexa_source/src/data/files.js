@@ -2943,7 +2943,7 @@ function sendToSelected() {
   },
   {
     id: "final-round-invitation-mailer",
-    shortName: "07. InvitationMailer.js",
+    shortName: "InvitationMailer.js",
     language: "javascript",
     category: "Final Round",
     summary: "Script to send invitation emails to various stakeholders for the final round.",
@@ -2968,11 +2968,11 @@ const EMAIL_COL = 2;
 const SPONSOR_TYPE_COL = 3;
 
 const SPONSOR_TEMPLATE_MAP = {
-  title: "02.1. TitleSponsorMail",
-  poweredby: "02.2. PoweredBySponsorMail",
-  sabroad: "02.3. StudyAbroadPartnerMail",
+  title: "TitleSponsorMail",
+  poweredby: "PoweredBySponsorMail",
+  sabroad: "StudyAbroadPartnerMail",
 };
-const DEFAULT_SPONSOR_TEMPLATE = "02. SponsorMail";
+const DEFAULT_SPONSOR_TEMPLATE = "SponsorMail";
 
 const MAIL_CONFIGS = {
   sponsor: {
@@ -2984,49 +2984,49 @@ const MAIL_CONFIGS = {
   },
   guest: {
     label: "Guests",
-    templateFile: "03. GuestMail",
+    templateFile: "GuestMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{guest_name}}",
     fallbackName: "Guest",
   },
   ambassador: {
     label: "Campus Ambassadors",
-    templateFile: "04. CampusAmbassadorMail",
+    templateFile: "CampusAmbassadorMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{ambassador_name}}",
     fallbackName: "Ambassador",
   },
   club: {
     label: "RU Clubs",
-    templateFile: "05. ClubMail",
+    templateFile: "ClubMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{club_name}}",
     fallbackName: "Club",
   },
   partnerClub: {
     label: "Partner Clubs",
-    templateFile: "06. PartnerClubMail",
+    templateFile: "PartnerClubMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{club_name}}",
     fallbackName: "Club",
   },
   apu: {
     label: "Apus",
-    templateFile: "08. AlumniMail",
+    templateFile: "AlumniMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{alumni_name}}",
     fallbackName: "Alumnus",
   },
   vaiya: {
     label: "Vaiyas",
-    templateFile: "08. AlumniMail",
+    templateFile: "AlumniMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{alumni_name}}",
     fallbackName: "Alumnus",
   },
   advisor: {
     label: "Advisors",
-    templateFile: "09. AdvisorMail",
+    templateFile: "AdvisorMail",
     subject: "Invitation to the Grand Finale of Unravel Hexa",
     placeholder: "{{advisor_name}}",
     fallbackName: "Advisor",
@@ -3239,7 +3239,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-judge-mail",
-    shortName: "01. JudgeMail.html",
+    shortName: "JudgeMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting judges to the final round.",
@@ -3397,7 +3397,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-title-sponsor-mail",
-    shortName: "02.1. TitleSponsorMail.html",
+    shortName: "TitleSponsorMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for the title sponsor of the final round.",
@@ -3535,7 +3535,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-powered-by-sponsor-mail",
-    shortName: "02.2. PoweredBySponsorMail.html",
+    shortName: "PoweredBySponsorMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for the powered-by sponsor of the final round.",
@@ -3673,7 +3673,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-study-abroad-partner-mail",
-    shortName: "02.3. StudyAbroadPartnerMail.html",
+    shortName: "StudyAbroadPartnerMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for the study abroad partner of the final round.",
@@ -3809,7 +3809,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-guest-mail",
-    shortName: "03. GuestMail.html",
+    shortName: "GuestMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting guests to the final round.",
@@ -3964,7 +3964,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-campus-ambassador-mail",
-    shortName: "04. CampusAmbassadorMail.html",
+    shortName: "CampusAmbassadorMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting campus ambassadors to the final round.",
@@ -4097,7 +4097,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-club-mail",
-    shortName: "05. ClubMail.html",
+    shortName: "ClubMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting university clubs to the final round.",
@@ -4230,7 +4230,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-partner-club-mail",
-    shortName: "06. PartnerClubMail.html",
+    shortName: "PartnerClubMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting partner clubs to the final round.",
@@ -4366,7 +4366,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-alumni-mail",
-    shortName: "08. AlumniMail.html",
+    shortName: "AlumniMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting alumni to the final round.",
@@ -4500,7 +4500,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-advisor-mail",
-    shortName: "09. AdvisorMail.html",
+    shortName: "AdvisorMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template for inviting advisors to the final round.",
@@ -4635,7 +4635,7 @@ function escapeHtml_(text) {
   },
   {
     id: "final-round-deadline-extension-mail",
-    shortName: "10. DeadlineExtensionMail.html",
+    shortName: "DeadlineExtensionMail.html",
     language: "html",
     category: "Final Round",
     summary: "Email template announcing a deadline extension for the final round.",
