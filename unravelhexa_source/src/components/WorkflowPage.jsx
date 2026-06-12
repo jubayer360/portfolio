@@ -398,7 +398,7 @@ export default function WorkflowPage() {
           <div className="wf-footer-inner">
             <p className="wf-footer-summary">
               This automated ecosystem replaced fragmented manual processes with a seamless, interconnected
-              pipeline—saving countless hours and ensuring a professional experience for all stakeholders throughout Unravel Hexa.
+              pipeline, saving many hours and ensuring a professional experience for all stakeholders throughout Unravel Hexa.
             </p>
             <div className="wf-footer-bottom">
               <a href="https://www.linkedin.com/in/ahmadjubayer" target="_blank" rel="noopener noreferrer" className="wf-footer-link">
