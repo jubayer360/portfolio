@@ -217,7 +217,7 @@ function ImpactIcon({ type }) {
       </svg>
     ),
   };
-  return <div className="impact-icon">{icons[type]}</div>;
+  return <div className="wf-impact-icon">{icons[type]}</div>;
 }
 
 export default function WorkflowPage() {
