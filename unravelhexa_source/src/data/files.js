@@ -1183,19 +1183,19 @@ function doGet(e) {
             </p>
             <div
                 style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-                <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+                <img src="/unravel_hexa/logos/facebook.png"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://unravelhexa.rubusinessclub.com/"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+                <img src="/unravel_hexa/logos/internet.png"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://www.facebook.com/hello.rubc"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+                <img src="/unravel_hexa/logos/email.png" alt="Email"
                     style="height: 9px; vertical-align: middle; margin-right: 2px;" />
                 <a href="mailto:hello.rubc@gmail.com"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+                <img src="/unravel_hexa/logos/phone.png" alt="Phone"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="tel:+8801586120216"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -2080,7 +2080,7 @@ function doGet(e) {
         <label for="pptxFile">Presentation File (PPTX / PPT)</label>
         <div class="file-upload-area" id="pptxArea" data-placeholder="Click or drag to upload PPTX / PPT file">
           <input id="pptxFile" name="pptxFile" type="file" accept=".pptx,.ppt" required />
-          <div class="file-upload-icon"><img src="https://lh3.googleusercontent.com/d/1kKCE5ANBQy0wKVefC2ylpf0OS3q0vyb6"
+          <div class="file-upload-icon"><img src="/unravel_hexa/logos/pptx.png"
               alt="PPTX icon" style="width:48px;height:48px;"></div>
           <div class="file-upload-text" id="pptxText">Click or drag to upload PPTX / PPT file</div>
           <div class="file-upload-hint">Accepted: .pptx, .ppt &bull; Max 30 MB</div>
@@ -2088,7 +2088,7 @@ function doGet(e) {
         <label for="pdfFile">Solution PDF</label>
         <div class="file-upload-area" id="pdfArea" data-placeholder="Click or drag to upload PDF file">
           <input id="pdfFile" name="pdfFile" type="file" accept=".pdf" required />
-          <div class="file-upload-icon"><img src="https://lh3.googleusercontent.com/d/1Sn2dk9I4mMM-wbHvcmtGbChSLNSeBk2p"
+          <div class="file-upload-icon"><img src="/unravel_hexa/logos/pdf.png"
               alt="PDF icon" style="width:48px;height:48px;"></div>
           <div class="file-upload-text" id="pdfText">Click or drag to upload PDF file</div>
           <div class="file-upload-hint">Accepted: .pdf &bull; Max 30 MB</div>
@@ -2701,19 +2701,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -2857,19 +2857,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3370,19 +3370,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3508,19 +3508,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3647,19 +3647,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3782,19 +3782,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3937,19 +3937,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4070,19 +4070,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4203,19 +4203,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4339,19 +4339,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4473,19 +4473,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4608,19 +4608,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4800,19 +4800,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -6041,19 +6041,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -6165,19 +6165,19 @@ function sanitizeFileName(name) {
             </p>
             <div
                 style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-                <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+                <img src="/unravel_hexa/logos/facebook.png"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://unravelhexa.rubusinessclub.com/"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+                <img src="/unravel_hexa/logos/internet.png"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://www.facebook.com/hello.rubc"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+                <img src="/unravel_hexa/logos/email.png" alt="Email"
                     style="height: 9px; vertical-align: middle; margin-right: 2px;" />
                 <a href="mailto:hello.rubc@gmail.com"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+                <img src="/unravel_hexa/logos/phone.png" alt="Phone"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="tel:+8801586120216"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -6355,19 +6355,19 @@ function sendEvaluationSheetEmail() {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -7511,19 +7511,19 @@ function sanitizeFileName(name) {
             </p>
             <div
                 style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-                <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+                <img src="/unravel_hexa/logos/facebook.png"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://unravelhexa.rubusinessclub.com/"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+                <img src="/unravel_hexa/logos/internet.png"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://www.facebook.com/hello.rubc"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+                <img src="/unravel_hexa/logos/email.png" alt="Email"
                     style="height: 9px; vertical-align: middle; margin-right: 2px;" />
                 <a href="mailto:hello.rubc@gmail.com"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-                <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+                <img src="/unravel_hexa/logos/phone.png" alt="Phone"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="tel:+8801586120216"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -8789,19 +8789,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -8965,19 +8965,19 @@ const WS_EMAIL_HTML = \`<html>
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -9168,19 +9168,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
+        <img src="/unravel_hexa/logos/facebook.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
+        <img src="/unravel_hexa/logos/internet.png"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
+        <img src="/unravel_hexa/logos/email.png" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
+        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
