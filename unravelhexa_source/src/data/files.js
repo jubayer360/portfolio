@@ -1174,7 +1174,7 @@ function doGet(e) {
         <div class="footer"
             style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
             <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-                <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+                <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
                     style="height: 40px;" />
             </p>
             <p
@@ -2692,7 +2692,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -2848,7 +2848,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3360,7 +3360,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3498,7 +3498,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3637,7 +3637,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3772,7 +3772,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3927,7 +3927,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4060,7 +4060,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4193,7 +4193,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4329,7 +4329,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4463,7 +4463,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4598,7 +4598,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4790,7 +4790,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -6032,7 +6032,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -6156,7 +6156,7 @@ function sanitizeFileName(name) {
         <div class="footer"
             style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
             <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-                <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+                <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
                     style="height: 40px;" />
             </p>
             <p
@@ -6346,7 +6346,7 @@ function sendEvaluationSheetEmail() {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -7502,7 +7502,7 @@ function sanitizeFileName(name) {
         <div class="footer"
             style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
             <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-                <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+                <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
                     style="height: 40px;" />
             </p>
             <p
@@ -8780,7 +8780,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -8956,7 +8956,7 @@ const WS_EMAIL_HTML = \`<html>
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -9159,7 +9159,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
+        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
