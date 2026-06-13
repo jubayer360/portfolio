@@ -802,7 +802,7 @@ export const portfolioFiles = [
   <div class="container">
     <header>
       <div class="logo-container">
-        <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+        <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo"
           class="logo">
       </div>
       <p style="opacity: 0.5; font-size: 0.7rem;">Registration Form</p>
@@ -1121,7 +1121,7 @@ function doGet(e) {
             <tr>
                 <td align="center" style="padding: 10px 0 5px; position: relative;">
                     <div style="position: relative; display: inline-block;">
-                        <img src="/unravel_hexa/logos/hero_logo.png"
+                        <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl"
                             alt="Unravel Logo" style="height: auto; width: 350px; max-width: 100%; display: block;" />
                     </div>
                 </td>
@@ -1174,7 +1174,7 @@ function doGet(e) {
         <div class="footer"
             style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
             <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-                <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+                <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
                     style="height: 40px;" />
             </p>
             <p
@@ -1183,19 +1183,19 @@ function doGet(e) {
             </p>
             <div
                 style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-                <img src="/unravel_hexa/logos/facebook.png"
+                <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://unravelhexa.rubusinessclub.com/"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-                <img src="/unravel_hexa/logos/internet.png"
+                <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://www.facebook.com/hello.rubc"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-                <img src="/unravel_hexa/logos/email.png" alt="Email"
+                <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
                     style="height: 9px; vertical-align: middle; margin-right: 2px;" />
                 <a href="mailto:hello.rubc@gmail.com"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-                <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+                <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="tel:+8801586120216"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -2057,7 +2057,7 @@ function doGet(e) {
 <body>
   <div class="header">
     <div class="logo-container">
-      <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo" class="logo">
+      <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo" class="logo">
     </div>
     <p class="subtitle">Submit your Round 1 solution
       below.</p>
@@ -2080,7 +2080,7 @@ function doGet(e) {
         <label for="pptxFile">Presentation File (PPTX / PPT)</label>
         <div class="file-upload-area" id="pptxArea" data-placeholder="Click or drag to upload PPTX / PPT file">
           <input id="pptxFile" name="pptxFile" type="file" accept=".pptx,.ppt" required />
-          <div class="file-upload-icon"><img src="/unravel_hexa/logos/pptx.png"
+          <div class="file-upload-icon"><img src="https://lh3.googleusercontent.com/d/1kKCE5ANBQy0wKVefC2ylpf0OS3q0vyb6"
               alt="PPTX icon" style="width:48px;height:48px;"></div>
           <div class="file-upload-text" id="pptxText">Click or drag to upload PPTX / PPT file</div>
           <div class="file-upload-hint">Accepted: .pptx, .ppt &bull; Max 30 MB</div>
@@ -2088,7 +2088,7 @@ function doGet(e) {
         <label for="pdfFile">Solution PDF</label>
         <div class="file-upload-area" id="pdfArea" data-placeholder="Click or drag to upload PDF file">
           <input id="pdfFile" name="pdfFile" type="file" accept=".pdf" required />
-          <div class="file-upload-icon"><img src="/unravel_hexa/logos/pdf.png"
+          <div class="file-upload-icon"><img src="https://lh3.googleusercontent.com/d/1Sn2dk9I4mMM-wbHvcmtGbChSLNSeBk2p"
               alt="PDF icon" style="width:48px;height:48px;"></div>
           <div class="file-upload-text" id="pdfText">Click or drag to upload PDF file</div>
           <div class="file-upload-hint">Accepted: .pdf &bull; Max 30 MB</div>
@@ -2610,7 +2610,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -2692,7 +2692,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -2701,19 +2701,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -2744,7 +2744,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -2848,7 +2848,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -2857,19 +2857,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3260,7 +3260,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3360,7 +3360,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3370,19 +3370,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3418,7 +3418,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3498,7 +3498,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3508,19 +3508,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3556,7 +3556,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3637,7 +3637,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3647,19 +3647,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3694,7 +3694,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3772,7 +3772,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3782,19 +3782,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3830,7 +3830,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -3927,7 +3927,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -3937,19 +3937,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -3985,7 +3985,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4060,7 +4060,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4070,19 +4070,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4118,7 +4118,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4193,7 +4193,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4203,19 +4203,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4251,7 +4251,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4329,7 +4329,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4339,19 +4339,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4387,7 +4387,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4463,7 +4463,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4473,19 +4473,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4521,7 +4521,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4598,7 +4598,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4608,19 +4608,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4656,7 +4656,7 @@ function escapeHtml_(text) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -4790,7 +4790,7 @@ function escapeHtml_(text) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -4800,19 +4800,19 @@ function escapeHtml_(text) {
 
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -4823,6 +4823,834 @@ function escapeHtml_(text) {
 </body>
 
 </html>
+`
+  },
+  {
+    id: "final-spin-wheel",
+    shortName: "SpinWheel.html",
+    language: "html",
+    category: "Final Round",
+    summary: "Grand Finale team order selection spin wheel with custom animations and interactive UI.",
+    content: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unravel Hexa - Grand Finale Team Order Spin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #080403 0%, #100705 25%, #160906 50%, #100705 75%, #080403 100%);
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated grid background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(245, 130, 32, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(245, 130, 32, 0.04) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            gap: 30px; /* FIX: Decreased gap between sections */
+        }
+
+        /* Left Section - Spin Wheel */
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 550px; /* Added max-width for better control */
+        }
+
+        .wheel-container {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        #wheelCanvas {
+            border-radius: 50%;
+            box-shadow: 
+                0 0 50px rgba(245, 130, 32, 0.45),
+                0 0 100px rgba(215, 32, 39, 0.25),
+                inset 0 0 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s ease;
+        }
+
+        .wheel-pointer {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #f58220;
+            filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.5));
+            z-index: 10;
+        }
+
+        .spin-button {
+            background: linear-gradient(45deg, #f58220, #d72027);
+            border: none;
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(245, 130, 32, 0.35);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .spin-button:hover:not(:disabled) {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(215, 32, 39, 0.45);
+            background: linear-gradient(45deg, #e06d10, #b91c1c);
+        }
+
+        .spin-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        /* Right Section - Header and Table */
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px; /* FIX: Increased width to allow title on one line */
+        }
+
+        .logo-container {
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            max-width: 350px;
+            height: auto;
+            filter: drop-shadow(0 10px 30px rgba(245, 130, 32, 0.35));
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #f58220;
+            text-align: center;
+            margin-bottom: 15px;
+            text-shadow: 0 0 30px rgba(245, 130, 32, 0.6);
+            letter-spacing: 3px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 30px rgba(245, 130, 32, 0.6); }
+            to { text-shadow: 0 0 40px rgba(245, 130, 32, 0.8), 0 0 60px rgba(215, 32, 39, 0.4); }
+        }
+
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #f5d0b5;
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        .table-container {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .table-heading {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #f58220;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(245, 130, 32, 0.5);
+        }
+
+        .order-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(245, 130, 32, 0.35);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .order-table th {
+            background: linear-gradient(45deg, rgba(245, 130, 32, 0.35), rgba(215, 32, 39, 0.35));
+            color: #f58220;
+            padding: 15px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-align: center;
+            border-bottom: 2px solid rgba(245, 130, 32, 0.5);
+        }
+
+        .order-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+
+        .order-table tbody tr:hover {
+            background: rgba(245, 130, 32, 0.12);
+        }
+
+        .order-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .order-table tbody tr.new-entry {
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .reset-button {
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.3);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .reset-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(231, 76, 60, 0.4);
+            background: linear-gradient(45deg, #c0392b, #a93226);
+        }
+        
+        /* Spinning animation */
+        .spinning {
+            animation: spin 3s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(var(--spin-degrees)); }
+        }
+
+        /* Celebration effects */
+        .celebration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #f58220;
+            animation: confetti-fall 3s linear forwards;
+        }
+
+        .confetti-piece:nth-child(odd) {
+            background: #d72027;
+        }
+
+        .confetti-piece:nth-child(3n) {
+            background: #ff9933;
+        }
+
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Completion popup */
+        .popup-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            padding: 20px;
+        }
+
+        .popup-overlay.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup-card {
+            background: linear-gradient(160deg, #1a0a08 0%, #120605 100%);
+            border: 2px solid rgba(245, 130, 32, 0.45);
+            border-radius: 20px;
+            padding: 36px 40px;
+            max-width: 480px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 40px rgba(245, 130, 32, 0.15);
+            transform: scale(0.85) translateY(20px);
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .popup-overlay.visible .popup-card {
+            transform: scale(1) translateY(0);
+        }
+
+        .popup-logo {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 24px;
+            filter: drop-shadow(0 8px 20px rgba(245, 130, 32, 0.3));
+        }
+
+        .popup-heading {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #f58220;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            text-shadow: 0 0 20px rgba(245, 130, 32, 0.4);
+        }
+
+        .popup-order-list {
+            list-style: none;
+            margin-bottom: 28px;
+        }
+
+        .popup-order-list li {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 10px 16px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            border-left: 3px solid #f58220;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .popup-order-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .popup-order-list .order-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 28px;
+            height: 28px;
+            background: linear-gradient(45deg, #f58220, #d72027);
+            border-radius: 50%;
+            font-size: 0.8rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .popup-footer-text {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #f5d0b5;
+            letter-spacing: 0.5px;
+            margin-top: 8px;
+        }
+
+        .popup-close-btn {
+            margin-top: 24px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.35);
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        .popup-close-btn:hover {
+            color: rgba(255, 255, 255, 0.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side - Spin Wheel -->
+        <div class="left-section">
+            <div class="wheel-container">
+                <!-- FIX: Increased canvas size for a bigger wheel -->
+                <canvas id="wheelCanvas" width="500" height="500"></canvas>
+                <div class="wheel-pointer"></div>
+            </div>
+            <button id="spinButton" class="spin-button">SPIN THE WHEEL</button>
+        </div>
+
+        <!-- Right Side - Header and Table -->
+        <div class="right-section">
+            <!-- Logo -->
+            <div class="logo-container">
+                <img src="../Logos/hero_logo.png" alt="Unravel 6 Logo" class="logo">
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="main-title">GRAND FINALE</h1>
+
+            <!-- Subtitle -->
+            <h2 class="subtitle">Team Order Selection Spin</h2>
+
+            <!-- Selected Order Table -->
+            <div class="table-container">
+                <h3 class="table-heading">Selected Order</h3>
+                <table id="orderTable" class="order-table">
+                    <thead>
+                        <tr>
+                            <th>SL</th>
+                            <th>Team Names</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orderTableBody">
+                        <!-- Selected teams will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reset Button -->
+            <button id="resetButton" class="reset-button">Reset Selection</button>
+        </div>
+    </div>
+
+    <!-- Completion Popup -->
+    <div id="completionPopup" class="popup-overlay">
+        <div class="popup-card">
+            <img src="../Logos/hero_logo.png" alt="Unravel 6 Logo" class="popup-logo">
+            <h2 class="popup-heading">Selected Team Order</h2>
+            <ul id="popupOrderList" class="popup-order-list"></ul>
+            <p class="popup-footer-text">Get Ready, The Game is On!🔥</p>
+            <button id="popupCloseBtn" class="popup-close-btn">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Team names array (7 teams)
+        const teams = [
+            "CASE STORM",
+            "ONE MAN ARMY",
+            "DUOPOLY",
+            "XLOCUST",
+            "UNRAVEL KORTE ASHCHHI",
+            "N8N",
+            "TEAM EIDOS"
+        ];
+
+        // Available teams (will be reduced as teams are selected)
+        let availableTeams = [...teams];
+        
+        // Selected teams order
+        let selectedOrder = [];
+
+        // Wheel colors — Unravel orange/red palette (7 segments)
+        const wheelColors = [
+            '#f58220', '#d72027', '#e05a20', '#b91c1c', '#ff9933', '#c0392b', '#ff6b35'
+        ];
+
+        // Canvas and context
+        const canvas = document.getElementById('wheelCanvas');
+        const ctx = canvas.getContext('2d');
+        const spinButton = document.getElementById('spinButton');
+        const resetButton = document.getElementById('resetButton');
+        const orderTableBody = document.getElementById('orderTableBody');
+        const completionPopup = document.getElementById('completionPopup');
+        const popupOrderList = document.getElementById('popupOrderList');
+        const popupCloseBtn = document.getElementById('popupCloseBtn');
+
+        // Wheel properties
+        let currentRotation = 0;
+        let isSpinning = false;
+
+        // Initialize the wheel
+        function initWheel() {
+            drawWheel();
+            updateSpinButton();
+        }
+
+        // Draw the wheel
+        function drawWheel() {
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = 230; // FIX: Increased radius to match larger canvas
+
+            // Clear canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (availableTeams.length === 0) {
+                // Draw empty wheel
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
+                ctx.fillStyle = '#333';
+                ctx.fill();
+                ctx.strokeStyle = '#f58220';
+                ctx.lineWidth = 3;
+                ctx.stroke();
+
+                // Draw "All Teams Selected" text
+                ctx.fillStyle = '#f58220';
+                ctx.font = 'bold 30px Montserrat'; // Increased font size
+                ctx.textAlign = 'center';
+                ctx.fillText('All Teams', centerX, centerY - 15);
+                ctx.fillText('Selected!', centerX, centerY + 25);
+                return;
+            }
+
+            const anglePerSegment = (2 * Math.PI) / availableTeams.length;
+
+            // Draw segments
+            for (let i = 0; i < availableTeams.length; i++) {
+                const startAngle = i * anglePerSegment; // Removed currentRotation for static drawing before CSS animation
+                const endAngle = (i + 1) * anglePerSegment;
+
+                // Draw segment
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+                ctx.closePath();
+                ctx.fillStyle = wheelColors[i % wheelColors.length];
+                ctx.fill();
+                ctx.strokeStyle = '#ffffff';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+
+                // Draw text
+                const textAngle = startAngle + anglePerSegment / 2;
+                const textX = centerX + Math.cos(textAngle) * (radius * 0.7);
+                const textY = centerY + Math.sin(textAngle) * (radius * 0.7);
+
+                ctx.save();
+                ctx.translate(textX, textY);
+                ctx.rotate(textAngle + Math.PI / 2);
+                ctx.fillStyle = '#ffffff';
+                const fontSize = availableTeams.length <= 7 ? 14 : 16;
+                ctx.font = \`bold \${fontSize}px Montserrat\`;
+                ctx.textAlign = 'center';
+                
+                // Split long team names across lines
+                const teamName = availableTeams[i];
+                const words = teamName.split(' ');
+                if (words.length > 2) {
+                    const mid = Math.ceil(words.length / 2);
+                    const firstLine = words.slice(0, mid).join(' ');
+                    const secondLine = words.slice(mid).join(' ');
+                    ctx.fillText(firstLine, 0, -8);
+                    ctx.fillText(secondLine, 0, 8);
+                } else if (teamName.length > 10) {
+                    const mid = Math.ceil(teamName.length / 2);
+                    ctx.fillText(teamName.slice(0, mid), 0, -8);
+                    ctx.fillText(teamName.slice(mid), 0, 8);
+                } else {
+                    ctx.fillText(teamName, 0, 0);
+                }
+                ctx.restore();
+            }
+
+            // Draw center circle
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, 30, 0, 2 * Math.PI);
+            ctx.fillStyle = '#f58220';
+            ctx.fill();
+            ctx.strokeStyle = '#ffffff';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+
+            // Draw center text
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 14px Montserrat';
+            ctx.textAlign = 'center';
+            ctx.fillText('SPIN', centerX, centerY + 5);
+        }
+
+        // Spin the wheel
+        function spinWheel() {
+            if (isSpinning || availableTeams.length === 0) return;
+
+            // FIX: Handle the last remaining team automatically
+            if (availableTeams.length === 1) {
+                const lastTeam = availableTeams[0];
+                selectedOrder.push(lastTeam);
+                availableTeams = [];
+
+                updateOrderTable();
+                drawWheel();
+                updateSpinButton();
+                showCelebration(lastTeam);
+                checkSelectionComplete();
+                return;
+            }
+
+            isSpinning = true;
+            spinButton.disabled = true;
+            spinButton.textContent = 'SPINNING...';
+
+            // Generate random spin (multiple rotations + random angle)
+            const minSpins = 5;
+            const maxSpins = 8;
+            const randomSpins = Math.random() * (maxSpins - minSpins) + minSpins;
+            const finalAngle = Math.random() * 2 * Math.PI;
+            const totalRotationDegrees = (currentRotation * (180 / Math.PI)) + (randomSpins * 360) + (finalAngle * (180 / Math.PI));
+
+            // Set CSS custom property for animation
+            canvas.style.setProperty('--spin-degrees', \`\${totalRotationDegrees}deg\`);
+            canvas.classList.add('spinning');
+
+            const totalRotationRadians = totalRotationDegrees * (Math.PI / 180);
+
+            // FIX: Correctly calculate which team is selected based on the top pointer
+            const anglePerSegment = (2 * Math.PI) / availableTeams.length;
+            const pointerAngle = 1.5 * Math.PI; // Pointer is at the top (270 degrees)
+            const effectiveAngle = (2 * Math.PI - (totalRotationRadians % (2 * Math.PI)) + pointerAngle) % (2 * Math.PI);
+            const selectedIndex = Math.floor(effectiveAngle / anglePerSegment);
+            const selectedTeam = availableTeams[selectedIndex];
+
+
+            // Wait for animation to complete
+            setTimeout(() => {
+                // Update rotation for next draw cycle
+                currentRotation = totalRotationRadians % (2 * Math.PI);
+                
+                // Add selected team to order
+                selectedOrder.push(selectedTeam);
+                
+                // Remove selected team from available teams
+                availableTeams = availableTeams.filter(team => team !== selectedTeam);
+                
+                // FIX: If only one team remains, add it to the order automatically
+                if (availableTeams.length === 1) {
+                    selectedOrder.push(availableTeams[0]);
+                    availableTeams = [];
+                }
+                
+                // FIX: Reset spinning state BEFORE updating the button
+                isSpinning = false;
+                canvas.classList.remove('spinning');
+                canvas.style.transform = \`rotate(\${currentRotation}rad)\`;
+
+
+                // Update UI
+                updateOrderTable();
+                drawWheel();
+                updateSpinButton();
+                
+                // Show celebration
+                showCelebration(selectedTeam);
+                checkSelectionComplete();
+                
+            }, 3000); // Match animation duration
+        }
+
+        // Update the order table
+        function updateOrderTable() {
+            orderTableBody.innerHTML = '';
+            
+            selectedOrder.forEach((team, index) => {
+                const row = document.createElement('tr');
+                row.classList.add('new-entry');
+                
+                const slCell = document.createElement('td');
+                slCell.textContent = index + 1;
+                
+                const teamCell = document.createElement('td');
+                teamCell.textContent = team;
+                
+                row.appendChild(slCell);
+                row.appendChild(teamCell);
+                orderTableBody.appendChild(row);
+            });
+        }
+
+        // Update spin button state
+        function updateSpinButton() {
+            if (availableTeams.length === 0) {
+                spinButton.textContent = 'ALL TEAMS SELECTED';
+                spinButton.disabled = true;
+            } else if (!isSpinning) {
+                spinButton.textContent = 'SPIN THE WHEEL';
+                spinButton.disabled = false;
+            }
+        }
+
+        // Show completion popup when all teams are selected
+        function checkSelectionComplete() {
+            if (availableTeams.length === 0 && selectedOrder.length === teams.length) {
+                setTimeout(showCompletionPopup, 800);
+            }
+        }
+
+        function showCompletionPopup() {
+            popupOrderList.innerHTML = '';
+            selectedOrder.forEach((team, index) => {
+                const li = document.createElement('li');
+                li.innerHTML = \`<span class="order-num">\${index + 1}</span><span>\${team}</span>\`;
+                popupOrderList.appendChild(li);
+            });
+            completionPopup.classList.add('visible');
+        }
+
+        function hideCompletionPopup() {
+            completionPopup.classList.remove('visible');
+        }
+
+        // Show celebration effect
+        function showCelebration(selectedTeam) {
+            // Create celebration container
+            const celebration = document.createElement('div');
+            celebration.classList.add('celebration');
+            document.body.appendChild(celebration);
+
+            // Create confetti pieces
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti-piece');
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                celebration.appendChild(confetti);
+            }
+
+            // Play celebration sound
+            try {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.setValueAtTime(800, audioContext.currentTime);
+                oscillator.frequency.setValueAtTime(1000, audioContext.currentTime + 0.1);
+                oscillator.frequency.setValueAtTime(1200, audioContext.currentTime + 0.2);
+                
+                gainNode.gain.setValueAtTime(0.2, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.5);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.5);
+            } catch (e) {
+                // Audio not supported
+            }
+
+            // Remove celebration after animation
+            setTimeout(() => {
+                document.body.removeChild(celebration);
+            }, 3000);
+        }
+
+        // Reset the wheel
+        function resetWheel() {
+            if (isSpinning) return;
+            
+            availableTeams = [...teams];
+            selectedOrder = [];
+            currentRotation = 0;
+            canvas.style.transform = \`rotate(0rad)\`;
+            
+            updateOrderTable();
+            drawWheel();
+            updateSpinButton();
+            hideCompletionPopup();
+        }
+
+        // Event listeners
+        spinButton.addEventListener('click', spinWheel);
+        resetButton.addEventListener('click', resetWheel);
+        popupCloseBtn.addEventListener('click', hideCompletionPopup);
+        completionPopup.addEventListener('click', (e) => {
+            if (e.target === completionPopup) hideCompletionPopup();
+        });
+
+        // Initialize on page load
+        window.addEventListener('load', initWheel);
+
+    </script>
+</body>
+</html>
+
 `
   },
   {
@@ -5451,7 +6279,7 @@ function escapeHtml_(text) {
 <body>
     <div class="header">
         <div class="logo-container">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo"
                 class="logo">
         </div>
     </div>
@@ -5976,7 +6804,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -6032,7 +6860,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -6041,19 +6869,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -6084,7 +6912,7 @@ function sanitizeFileName(name) {
             <tr>
                 <td align="center" style="padding: 10px 0 5px; position: relative;">
                     <div style="position: relative; display: inline-block;">
-                        <img src="/unravel_hexa/logos/hero_logo.png"
+                        <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl"
                             alt="Unravel Logo" style="height: auto; width: 350px; max-width: 100%; display: block;" />
                     </div>
                 </td>
@@ -6156,7 +6984,7 @@ function sanitizeFileName(name) {
         <div class="footer"
             style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
             <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-                <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+                <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
                     style="height: 40px;" />
             </p>
             <p
@@ -6165,19 +6993,19 @@ function sanitizeFileName(name) {
             </p>
             <div
                 style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-                <img src="/unravel_hexa/logos/facebook.png"
+                <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://unravelhexa.rubusinessclub.com/"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-                <img src="/unravel_hexa/logos/internet.png"
+                <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://www.facebook.com/hello.rubc"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-                <img src="/unravel_hexa/logos/email.png" alt="Email"
+                <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
                     style="height: 9px; vertical-align: middle; margin-right: 2px;" />
                 <a href="mailto:hello.rubc@gmail.com"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-                <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+                <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="tel:+8801586120216"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -6301,7 +7129,7 @@ function sendEvaluationSheetEmail() {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -6346,7 +7174,7 @@ function sendEvaluationSheetEmail() {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -6355,19 +7183,19 @@ function sendEvaluationSheetEmail() {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -6981,7 +7809,7 @@ function sendThankYouEmails() {
 <body>
     <div class="header">
         <div class="logo-container">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo"
                 class="logo">
         </div>
     </div>
@@ -7449,7 +8277,7 @@ function sanitizeFileName(name) {
             <tr>
                 <td align="center" style="padding: 10px 0 5px; position: relative;">
                     <div style="position: relative; display: inline-block;">
-                        <img src="/unravel_hexa/logos/hero_logo.png"
+                        <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl"
                             alt="Unravel Logo" style="height: auto; width: 350px; max-width: 100%; display: block;" />
                     </div>
                 </td>
@@ -7502,7 +8330,7 @@ function sanitizeFileName(name) {
         <div class="footer"
             style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
             <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-                <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+                <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
                     style="height: 40px;" />
             </p>
             <p
@@ -7511,19 +8339,19 @@ function sanitizeFileName(name) {
             </p>
             <div
                 style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-                <img src="/unravel_hexa/logos/facebook.png"
+                <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://unravelhexa.rubusinessclub.com/"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-                <img src="/unravel_hexa/logos/internet.png"
+                <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="https://www.facebook.com/hello.rubc"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-                <img src="/unravel_hexa/logos/email.png" alt="Email"
+                <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
                     style="height: 9px; vertical-align: middle; margin-right: 2px;" />
                 <a href="mailto:hello.rubc@gmail.com"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-                <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+                <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
                     style="height: 14px; vertical-align: middle; margin-right: 2px;" />
                 <a href="tel:+8801586120216"
                     style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -8159,7 +8987,7 @@ function sanitizeFileName(name) {
 <body>
   <div class="header">
     <div class="logo-container">
-      <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo" class="logo">
+      <img src="https://lh3.googleusercontent.com/d/1rT9vyAwzGi9jaDQbq8cNwAuKOVqWFY9F" alt="Unravel Logo" class="logo">
     </div>
   </div>
   <div class="form-container">
@@ -8671,7 +9499,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -8780,7 +9608,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -8789,19 +9617,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -8847,7 +9675,7 @@ const WS_EMAIL_HTML = \`<html>
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -8956,7 +9784,7 @@ const WS_EMAIL_HTML = \`<html>
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -8965,19 +9793,19 @@ const WS_EMAIL_HTML = \`<html>
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>
@@ -9123,7 +9951,7 @@ function sanitizeFileName(name) {
       <tr>
         <td align="center" style="padding: 10px 0 5px; position: relative;">
           <div style="position: relative; display: inline-block;">
-            <img src="/unravel_hexa/logos/hero_logo.png" alt="Unravel Logo"
+            <img src="https://lh3.googleusercontent.com/d/1ULmWBwUxsbxfUnA1SZcmaNPkiChHpDVl" alt="Unravel Logo"
               style="height: auto; width: 350px; max-width: 100%; display: block;" />
           </div>
         </td>
@@ -9159,7 +9987,7 @@ function sanitizeFileName(name) {
     <div class="footer"
       style="margin-top: 25px; font-size: 15px; border-top: 2px solid #f0e8df; padding-top: 20px; color: #64748b; text-align: center; background-color: #fdf8f3; border-radius: 8px; padding: 20px;">
       <p style="text-align: center; margin-bottom: 10px; font-family: 'Times New Roman', Times, serif;">
-        <img src="/unravel_hexa/logos/rubclogo.png" alt="RUBC Logo"
+        <img src="https://lh3.googleusercontent.com/d/1qSgu8BNINAbZiuoniMnrOyzgUKdHYdxl" alt="RUBC Logo"
           style="height: 40px;" />
       </p>
       <p
@@ -9168,19 +9996,19 @@ function sanitizeFileName(name) {
       </p>
       <div
         style="display: inline-block; text-align: left; font-family: 'Times New Roman', Times, serif; color: #64748b; font-size: 12px;">
-        <img src="/unravel_hexa/logos/facebook.png"
+        <img src="https://lh3.googleusercontent.com/d/1LKDM7xFU3w94w1IbdLAz_2xOyVeSOrc3"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://unravelhexa.rubusinessclub.com/"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">unravelhexa.rubusinessclub.com</a><br />
-        <img src="/unravel_hexa/logos/internet.png"
+        <img src="https://lh3.googleusercontent.com/d/1C2-pClGKNNYBJAHBV_cUi6_ka8LYZ-h0"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="https://www.facebook.com/hello.rubc"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">www.facebook.com/hello.rubc</a><br />
-        <img src="/unravel_hexa/logos/email.png" alt="Email"
+        <img src="https://lh3.googleusercontent.com/d/1lCbM0aGS2sDUhNS1XbFy7zHkIIgbRvER" alt="Email"
           style="height: 9px; vertical-align: middle; margin-right: 2px;" />
         <a href="mailto:hello.rubc@gmail.com"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">hello.rubc@gmail.com</a><br />
-        <img src="/unravel_hexa/logos/phone.png" alt="Phone"
+        <img src="https://lh3.googleusercontent.com/d/1hdlRf7PifL-RfIc5lC_1gHckC6RePmi2" alt="Phone"
           style="height: 14px; vertical-align: middle; margin-right: 2px;" />
         <a href="tel:+8801586120216"
           style="color: #64748b; text-decoration: none; font-weight: 500; font-family: 'Times New Roman', Times, serif;">01586120216</a>

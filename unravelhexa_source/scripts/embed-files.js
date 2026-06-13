@@ -33,6 +33,7 @@ const files = [
   { id: 'final-round-alumni-mail', shortName: 'AlumniMail.html', language: 'html', category: 'Final Round', summary: 'Email template for inviting alumni to the final round.', originalPath: 'Final Round/AlumniMail.html' },
   { id: 'final-round-advisor-mail', shortName: 'AdvisorMail.html', language: 'html', category: 'Final Round', summary: 'Email template for inviting advisors to the final round.', originalPath: 'Final Round/AdvisorMail.html' },
   { id: 'final-round-deadline-extension-mail', shortName: 'DeadlineExtensionMail.html', language: 'html', category: 'Final Round', summary: 'Email template announcing a deadline extension for the final round.', originalPath: 'Final Round/DeadlineExtensionMail.html' },
+  { id: 'final-spin-wheel', shortName: 'SpinWheel.html', language: 'html', category: 'Final Round', summary: 'Grand Finale team order selection spin wheel with custom animations and interactive UI.', originalPath: '../GRAND FINALE EVENT/Unravel-spin-wheel.html' },
 
   // Judges
   { id: 'judge-onboarding-form', shortName: 'JudgeOnboarding.html', language: 'html', category: 'Judges', summary: 'Judge registration and onboarding portal to collect details and availability.', originalPath: 'Judges/01. Judgeonboardingform.html' },

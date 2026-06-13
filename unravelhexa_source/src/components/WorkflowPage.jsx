@@ -104,6 +104,15 @@ const workflowPhases = [
         after: 'One-click bulk send with personalization',
         metric: 'Bulk mail in seconds',
       },
+      {
+        icon: 'script',
+        title: 'Team Order Spin Wheel',
+        tech: 'HTML · Canvas API',
+        desc: 'Interactive spin wheel used during the Grand Finale to determine team presentation order, featuring suspenseful animations and confetti effects.',
+        before: 'Manual random picking using chits or random.org',
+        after: 'Visually stunning interactive wheel with suspenseful animation',
+        metric: 'Fair & exciting randomizer',
+      },
     ],
   },
   {
