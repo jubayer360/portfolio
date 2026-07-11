@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/LEB_practices",
+      "destination": "/academics/LEB/LEBPracticeQuestions.html"
+    }
+  ]
+}
