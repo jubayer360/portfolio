@@ -3,6 +3,39 @@
     {
       "source": "/LEB_practices",
       "destination": "/academics/LEB/LEBPracticeQuestions.html"
+    },
+    {
+      "source": "/LEB_practices/",
+      "destination": "/academics/LEB/LEBPracticeQuestions.html"
+    },
+    {
+      "source": "/LEB_practices.png",
+      "destination": "/academics/LEB/LEBPracticeQuestions.png"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/LEB_practices",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    },
+    {
+      "source": "/LEB_practices.png",
+      "headers": [
+        { "key": "Content-Type", "value": "image/png" },
+        { "key": "Cache-Control", "value": "public, max-age=86400, immutable" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    },
+    {
+      "source": "/academics/LEB/LEBPracticeQuestions.png",
+      "headers": [
+        { "key": "Content-Type", "value": "image/png" },
+        { "key": "Cache-Control", "value": "public, max-age=86400, immutable" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
     }
   ]
 }
