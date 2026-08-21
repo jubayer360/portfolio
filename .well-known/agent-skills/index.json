@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "about-jubayer",
+      "type": "skill-md",
+      "description": "Summarize Jubayer Ahmad's background, experience, skills, and contact details. Use when introducing Jubayer, drafting outreach, or answering questions about his portfolio.",
+      "url": "/.well-known/agent-skills/about-jubayer/SKILL.md",
+      "digest": "sha256:f516e26cb71f9dd5a1ae72b6ad081da6e41e9ee9e016517d6708e2a68bfca2dd"
+    }
+  ]
+}

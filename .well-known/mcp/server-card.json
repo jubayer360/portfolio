@@ -1,0 +1,34 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json",
+  "version": "1.0",
+  "protocolVersion": "2025-06-18",
+  "serverInfo": {
+    "name": "jubayer-pro",
+    "title": "Jubayer Ahmad Portfolio",
+    "version": "1.0.0"
+  },
+  "description": "Discovery card for jubayer.pro. The MCP endpoint is reserved for future tools that expose portfolio content to agents.",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "/mcp"
+  },
+  "authentication": {
+    "required": false
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  },
+  "tools": [
+    {
+      "name": "get_profile",
+      "title": "Get Profile",
+      "description": "Return Jubayer Ahmad's canonical profile summary from the published markdown sources.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

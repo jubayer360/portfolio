@@ -1,0 +1,28 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.jubayer.pro/.well-known/api-catalog",
+      "item": [
+        {
+          "href": "https://www.jubayer.pro/"
+        }
+      ],
+      "service-desc": [
+        {
+          "href": "https://www.jubayer.pro/index.md",
+          "type": "text/markdown"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://www.jubayer.pro/llms.txt",
+          "type": "text/plain"
+        },
+        {
+          "href": "https://www.jubayer.pro/",
+          "type": "text/html"
+        }
+      ]
+    }
+  ]
+}
