@@ -34,11 +34,16 @@
   <link rel="preconnect" href="https://lh3.googleusercontent.com">
 
   <!-- Preload LCP hero image -->
-  <link rel="preload" as="image" type="image/webp" href="images/JubayerAhmad-main-image.webp">
+  <link rel="preload" as="image" type="image/webp" href="images/JubayerAhmad-main-image.webp" fetchpriority="high">
 
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"></noscript>
 
   <style>
     /* ═══════════════════════════════════════
@@ -321,8 +326,7 @@
       color: var(--accent);
       font-weight: 500;
       margin-bottom: 1.5rem;
-      opacity: 0;
-      animation: fadeUp 0.8s 0.2s forwards;
+      animation: fadeUp 0.8s 0.2s both;
     }
 
     /* Removed emdash */
@@ -334,8 +338,7 @@
       line-height: 1.05;
       letter-spacing: -0.03em;
       margin-bottom: 1.5rem;
-      opacity: 0;
-      animation: fadeUp 0.9s 0.35s forwards;
+      animation: fadeUp 0.9s 0.35s both;
     }
 
     .hero-name .accent {
@@ -351,8 +354,7 @@
       color: var(--text-secondary);
       max-width: 440px;
       margin-bottom: 2.5rem;
-      opacity: 0;
-      animation: fadeUp 0.9s 0.5s forwards;
+      animation: fadeUp 0.9s 0.5s both;
       font-weight: 300;
     }
 
@@ -361,8 +363,7 @@
       gap: 1rem;
       align-items: center;
       flex-wrap: wrap;
-      opacity: 0;
-      animation: fadeUp 0.9s 0.65s forwards;
+      animation: fadeUp 0.9s 0.65s both;
     }
 
     .btn-primary {
@@ -426,8 +427,7 @@
       margin-top: 3rem;
       padding-top: 2rem;
       border-top: 1px solid var(--border-subtle);
-      opacity: 0;
-      animation: fadeUp 0.9s 0.8s forwards;
+      animation: fadeUp 0.9s 0.8s both;
     }
 
     .stat-number {
@@ -459,8 +459,7 @@
       display: flex;
       justify-content: flex-end;
       z-index: 1;
-      opacity: 0;
-      animation: fadeIn 1.2s 0.4s forwards;
+      animation: fadeIn 1.2s 0.4s both;
     }
 
     .hero-image-frame {
@@ -2639,7 +2638,7 @@
         <div class="achievement-title">Champion — Agents of Change 4.0</div>
         <div class="achievement-desc">Organized by <strong>Teach for Bangladesh</strong>. Won the national leadership
           and social impact competition for emerging changemakers.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA"
+        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA=w640"
           alt="Champion - Agents of Change 4.0" onclick="openModal('modal-aoc')" loading="lazy" width="600" height="400">
       </div>
 
@@ -2648,7 +2647,7 @@
         <div class="achievement-title">1st Runner Up — CENNOVATION 2026</div>
         <div class="achievement-desc">Organized by <strong>CEE, Islamic University of Technology (IUT)</strong>. Placed
           1st Runner Up in a national innovation competition.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5"
+        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5=w640"
           alt="1st Runner Up - CENNOVATION 2026" onclick="openModal('modal-cennovation')" loading="lazy" width="600" height="400">
       </div>
 
@@ -2657,7 +2656,7 @@
         <div class="achievement-title">2nd Runner Up — Mapathon 2026</div>
         <div class="achievement-desc">Organized by <strong>Save the Children &amp; RIMES</strong>. Placed in the top 3
           of a national geospatial mapping challenge.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj"
+        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj=w640"
           alt="2nd Runner Up - Mapathon 2026" onclick="openModal('modal-mapathon')" loading="lazy" width="600" height="400">
       </div>
 
@@ -2667,7 +2666,7 @@
         <div class="achievement-title">Champion — Fresher's Quest 2.0</div>
         <div class="achievement-desc">Won the flagship freshers' competition organized by <strong>Rajshahi University
             Business Club</strong>.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D"
+        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D=w640"
           alt="Champion - Fresher's Quest 2.0" onclick="openModal('modal-freshers')" loading="lazy" width="600" height="400">
       </div>
 
@@ -3022,47 +3021,47 @@
 
 
   <!-- ═══ MODALS ═══ -->
-  <div id="modal-aoc" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Agents of Change 4.0 certificate">
+  <div id="modal-aoc" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Agents of Change 4.0 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-aoc'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA"
-        alt="Champion - Agents of Change 4.0" loading="lazy">
+        alt="Champion - Agents of Change 4.0" loading="lazy" width="1600" height="1322">
     </div>
   </div>
-  <div id="modal-cennovation" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="CENNOVATION 2026 certificate">
+  <div id="modal-cennovation" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="CENNOVATION 2026 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close"
         onclick="closeModal(document.getElementById('modal-cennovation'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5"
-        alt="1st Runner Up - CENNOVATION 2026" loading="lazy">
+        alt="1st Runner Up - CENNOVATION 2026" loading="lazy" width="1600" height="900">
     </div>
   </div>
-  <div id="modal-mapathon" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Mapathon 2026 certificate">
+  <div id="modal-mapathon" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Mapathon 2026 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-mapathon'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj"
-        alt="2nd Runner Up - Mapathon 2026" loading="lazy">
+        alt="2nd Runner Up - Mapathon 2026" loading="lazy" width="1600" height="987">
     </div>
   </div>
-  <div id="modal-ignite" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Ignite 5.0 certificate">
+  <div id="modal-ignite" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Ignite 5.0 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-ignite'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1eDiyJBh5is1G6S0i-5XnAyJRgR-A9hNJ"
-        alt="Outstanding Leader - Ignite 5.0" loading="lazy">
+        alt="Outstanding Leader - Ignite 5.0" loading="lazy" width="1600" height="1200">
     </div>
   </div>
-  <div id="modal-freshers" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Fresher's Quest 2.0 certificate">
+  <div id="modal-freshers" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Fresher's Quest 2.0 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-freshers'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D"
-        alt="Champion - Fresher's Quest 2.0" loading="lazy">
+        alt="Champion - Fresher's Quest 2.0" loading="lazy" width="1404" height="1536">
     </div>
   </div>
 
 
   <!-- ═══ FEATURED VIDEO POPUP ═══ -->
   <div id="video-modal" class="v-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title"
-    aria-hidden="true">
+    aria-hidden="true" inert>
     <div class="v-scrim" onclick="closeVideoModal()"></div>
 
     <div class="v-card">
@@ -3195,13 +3194,16 @@
 
     // Modal functions
     function openModal(id) {
-      document.getElementById(id).classList.add('open');
+      const modal = document.getElementById(id);
+      modal.classList.add('open');
+      modal.removeAttribute('inert');
       document.body.style.overflow = 'hidden';
     }
     function closeModal(el) {
       const modal = el.classList.contains('img-modal') ? el : el.closest('.img-modal');
       if (modal) {
         modal.classList.remove('open');
+        modal.setAttribute('inert', '');
         document.body.style.overflow = '';
       }
     }
@@ -3368,9 +3370,9 @@
         vEndcard.classList.remove('show');
         vModal.classList.add('open');
         vModal.setAttribute('aria-hidden', 'false');
+        vModal.removeAttribute('inert');
         document.body.style.overflow = 'hidden';
         document.getElementById('video-close').focus({ preventScroll: true });
-        // Warm the API so pressing play is instant, but keep the poster until asked
         loadYouTubeApi();
         if (autoplay) startVideo();
       }
@@ -3381,6 +3383,7 @@
       if (!vModal.classList.contains('open')) return;
       vModal.classList.remove('open');
       vModal.setAttribute('aria-hidden', 'true');
+      vModal.setAttribute('inert', '');
       document.body.style.overflow = '';
       clearInterval(endWatcher);
       clearTimeout(revealTimer);
