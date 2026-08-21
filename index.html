@@ -6,13 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jubayer Ahmad | Portfolio</title>
   <meta name="description"
-    content="Jubayer Ahmad, Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership. BBA student at IBA, University of Rajshahi.">
+    content="Jubayer Ahmad — Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership. BBA student at IBA, University of Rajshahi.">
   <meta name="keywords" content="Jubayer Ahmad, Portfolio, BBA, IBA Rajshahi, Operations, Brand Strategy, Leadership">
   <meta name="author" content="Jubayer Ahmad">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="canonical" href="https://www.jubayer.pro/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.jubayer.pro/">
+  <meta property="og:title" content="Jubayer Ahmad | Portfolio">
+  <meta property="og:description" content="Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership.">
+  <meta property="og:image" content="https://www.jubayer.pro/images/JubayerAhmad-main-image.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Jubayer Ahmad | Portfolio">
+  <meta name="twitter:description" content="Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership.">
+  <meta name="twitter:image" content="https://www.jubayer.pro/images/JubayerAhmad-main-image.png">
+
   <link rel="icon" type="image/jpeg" href="https://lh3.googleusercontent.com/d/1IiVKu6fLSdQ2mmJ59c0Y4Y-tFw1xu8KJ">
   <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1IiVKu6fLSdQ2mmJ59c0Y4Y-tFw1xu8KJ">
+
+  <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://lh3.googleusercontent.com">
+
+  <!-- Preload LCP hero image -->
+  <link rel="preload" as="image" type="image/webp" href="images/JubayerAhmad-main-image.webp">
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
@@ -49,7 +72,7 @@
       --font-body: 'Inter', system-ui, sans-serif;
 
       --nav-h: 72px;
-      --section-pad: clamp(80px, 10vw, 120px);
+      --section-pad: clamp(36px, 4.5vw, 56px);
       --container: clamp(24px, 5vw, 80px);
 
       --radius-sm: 8px;
@@ -63,6 +86,24 @@
       --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
       --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
       --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 16px;
+      padding: 12px 24px;
+      background: var(--accent);
+      color: #fff;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      z-index: 200;
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus {
+      top: 12px;
     }
 
     *,
@@ -98,15 +139,9 @@
       max-width: 100%;
     }
 
-    /* Grain overlay for subtle texture */
-    body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 9999;
-    }
+    /* Grain overlay removed — the full-screen fixed SVG filter layer
+       caused a costly compositing pass on every frame (paint + GPU).
+       The visual effect was barely perceptible at 2.5% opacity. */
 
     /* ── SCROLLBAR ── */
     ::-webkit-scrollbar {
@@ -254,7 +289,7 @@
       width: 600px;
       height: 600px;
       background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-      filter: blur(80px);
+      filter: blur(40px);
       pointer-events: none;
       animation: ambientFloat 8s ease-in-out infinite;
     }
@@ -988,6 +1023,9 @@
 
     .achievement-img {
       width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
       border-radius: var(--radius-sm);
       border: 1px solid var(--border-subtle);
       margin-top: 12px;
@@ -1805,60 +1843,86 @@
       position: absolute;
       top: 62%;
       left: 50%;
-      width: clamp(44px, 6vw, 56px);
-      height: clamp(44px, 6vw, 56px);
+      width: clamp(39px, 5.6vw, 50px);
+      height: clamp(39px, 5.6vw, 50px);
       transform: translate(-50%, -50%);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #fff;
-      background: var(--gradient-accent);
-      box-shadow: 0 16px 38px -10px rgba(37, 99, 235, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.35);
-      transition: transform 0.45s var(--ease-spring), box-shadow 0.4s var(--ease-out), opacity 0.3s var(--ease-out);
+      color: rgba(255, 255, 255, 0.95);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.22) 0%,
+        rgba(255, 255, 255, 0.08) 100%
+      );
+      backdrop-filter: blur(16px) saturate(1.6);
+      -webkit-backdrop-filter: blur(16px) saturate(1.6);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.25),
+        0 2px 8px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+      transition: transform 0.5s var(--ease-spring), box-shadow 0.4s var(--ease-out), background 0.4s var(--ease-out), border-color 0.4s var(--ease-out), opacity 0.3s var(--ease-out);
     }
 
     .v-play::before {
       content: '';
       position: absolute;
-      inset: -5px;
+      inset: 0;
       border-radius: 50%;
-      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: linear-gradient(
+        160deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        transparent 50%
+      );
+      pointer-events: none;
     }
 
     .v-play::after {
       content: '';
       position: absolute;
-      inset: -5px;
+      inset: -6px;
       border-radius: 50%;
-      border: 1.5px solid rgba(255, 255, 255, 0.5);
-      animation: vRipple 2.8s var(--ease-out) infinite;
+      border: 1.5px solid rgba(255, 255, 255, 0.3);
+      animation: vRipple 3s var(--ease-out) infinite;
     }
 
     @keyframes vRipple {
       0% {
         transform: scale(1);
-        opacity: 0.6;
+        opacity: 0.5;
       }
 
       70%,
       100% {
-        transform: scale(1.65);
+        transform: scale(1.7);
         opacity: 0;
       }
     }
 
     .v-poster:hover .v-play,
     .v-poster:focus-visible .v-play {
-      transform: translate(-50%, -50%) scale(1.08);
-      box-shadow: 0 20px 48px -10px rgba(37, 99, 235, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      transform: translate(-50%, -50%) scale(1.1);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.32) 0%,
+        rgba(255, 255, 255, 0.14) 100%
+      );
+      border-color: rgba(255, 255, 255, 0.5);
+      box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.3),
+        0 4px 12px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.12);
     }
 
     .v-play svg {
-      width: 36%;
-      height: 36%;
-      margin-left: 9%;
-      filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.3));
+      width: 46%;
+      height: 46%;
+      margin-left: 8%;
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.4));
     }
 
     .v-poster-dur {
@@ -2098,6 +2162,30 @@
       .v-poster img {
         transition: none;
       }
+
+      .hero-eyebrow,
+      .hero-name,
+      .hero-tagline,
+      .hero-actions,
+      .hero-stats,
+      .hero-image-wrap {
+        opacity: 1;
+        animation: none;
+      }
+
+      .hero-image-frame img {
+        animation: none;
+      }
+
+      #hero::before {
+        animation: none;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
     }
 
 
@@ -2282,8 +2370,11 @@
 
 <body>
 
+  <!-- Skip to main content for accessibility -->
+  <a href="#hero" class="skip-link">Skip to main content</a>
+
   <!-- ═══ NAV ═══ -->
-  <nav id="main-nav">
+  <nav id="main-nav" aria-label="Main navigation">
     <a href="#hero" class="nav-logo">Jubayer<span>.</span></a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#about" onclick="closeNav()">About</a></li>
@@ -2294,13 +2385,14 @@
       <li><a href="#extracurriculars" onclick="closeNav()">Extracurriculars</a></li>
       <li><a href="#contact" onclick="closeNav()">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu">
+    <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
 
   <!-- ═══ HERO ═══ -->
+  <main>
   <section id="hero">
     <div class="hero-text">
       <p class="hero-eyebrow">Business Student & Strategic Leader</p>
@@ -2335,7 +2427,10 @@
 
     <div class="hero-image-wrap">
       <div class="hero-image-frame">
-        <img src="images/JubayerAhmad-main-image.png" alt="Jubayer Ahmad" width="380" height="475">
+        <picture>
+          <source srcset="images/JubayerAhmad-main-image.webp" type="image/webp">
+          <img src="images/JubayerAhmad-main-image.png" alt="Jubayer Ahmad" width="380" height="475" fetchpriority="high">
+        </picture>
       </div>
     </div>
   </section>
@@ -2545,7 +2640,7 @@
         <div class="achievement-desc">Organized by <strong>Teach for Bangladesh</strong>. Won the national leadership
           and social impact competition for emerging changemakers.</div>
         <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA"
-          alt="Champion - Agents of Change 4.0" onclick="openModal('modal-aoc')" loading="lazy">
+          alt="Champion - Agents of Change 4.0" onclick="openModal('modal-aoc')" loading="lazy" width="600" height="400">
       </div>
 
       <div class="achievement-card">
@@ -2554,7 +2649,7 @@
         <div class="achievement-desc">Organized by <strong>CEE, Islamic University of Technology (IUT)</strong>. Placed
           1st Runner Up in a national innovation competition.</div>
         <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5"
-          alt="1st Runner Up - CENNOVATION 2026" onclick="openModal('modal-cennovation')" loading="lazy">
+          alt="1st Runner Up - CENNOVATION 2026" onclick="openModal('modal-cennovation')" loading="lazy" width="600" height="400">
       </div>
 
       <div class="achievement-card">
@@ -2563,7 +2658,7 @@
         <div class="achievement-desc">Organized by <strong>Save the Children &amp; RIMES</strong>. Placed in the top 3
           of a national geospatial mapping challenge.</div>
         <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj"
-          alt="2nd Runner Up - Mapathon 2026" onclick="openModal('modal-mapathon')" loading="lazy">
+          alt="2nd Runner Up - Mapathon 2026" onclick="openModal('modal-mapathon')" loading="lazy" width="600" height="400">
       </div>
 
 
@@ -2573,7 +2668,7 @@
         <div class="achievement-desc">Won the flagship freshers' competition organized by <strong>Rajshahi University
             Business Club</strong>.</div>
         <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D"
-          alt="Champion - Fresher's Quest 2.0" onclick="openModal('modal-freshers')" loading="lazy">
+          alt="Champion - Fresher's Quest 2.0" onclick="openModal('modal-freshers')" loading="lazy" width="600" height="400">
       </div>
 
     </div>
@@ -2634,7 +2729,7 @@
           <div class="cert-shine"></div>
           <div class="cert-card-body">
             <div class="cert-issuer-badge">
-              <img src="images/anthropic-logo.png" alt="Anthropic" class="cert-issuer-icon" style="background: transparent; padding: 2px;">
+              <img src="images/anthropic-logo.png" alt="Anthropic" class="cert-issuer-icon" style="background: transparent; padding: 2px;" width="20" height="20" loading="lazy">
               <span class="cert-issuer-name">Anthropic</span>
             </div>
             <div class="cert-title">AI Fluency for Students</div>
@@ -2913,6 +3008,8 @@
   </section>
 
 
+  </main>
+
   <!-- ═══ FOOTER ═══ -->
   <footer>
     <div class="footer-copy">© 2026 Jubayer Ahmad. All rights reserved.</div>
@@ -2925,40 +3022,40 @@
 
 
   <!-- ═══ MODALS ═══ -->
-  <div id="modal-aoc" class="img-modal" onclick="closeModal(this)">
+  <div id="modal-aoc" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Agents of Change 4.0 certificate">
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-aoc'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA"
-        alt="Champion - Agents of Change 4.0">
+        alt="Champion - Agents of Change 4.0" loading="lazy">
     </div>
   </div>
-  <div id="modal-cennovation" class="img-modal" onclick="closeModal(this)">
+  <div id="modal-cennovation" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="CENNOVATION 2026 certificate">
     <div class="img-modal-inner">
       <button class="img-modal-close"
         onclick="closeModal(document.getElementById('modal-cennovation'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5"
-        alt="1st Runner Up - CENNOVATION 2026">
+        alt="1st Runner Up - CENNOVATION 2026" loading="lazy">
     </div>
   </div>
-  <div id="modal-mapathon" class="img-modal" onclick="closeModal(this)">
+  <div id="modal-mapathon" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Mapathon 2026 certificate">
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-mapathon'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj"
-        alt="2nd Runner Up - Mapathon 2026">
+        alt="2nd Runner Up - Mapathon 2026" loading="lazy">
     </div>
   </div>
-  <div id="modal-ignite" class="img-modal" onclick="closeModal(this)">
+  <div id="modal-ignite" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Ignite 5.0 certificate">
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-ignite'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1eDiyJBh5is1G6S0i-5XnAyJRgR-A9hNJ"
-        alt="Outstanding Leader - Ignite 5.0">
+        alt="Outstanding Leader - Ignite 5.0" loading="lazy">
     </div>
   </div>
-  <div id="modal-freshers" class="img-modal" onclick="closeModal(this)">
+  <div id="modal-freshers" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Fresher's Quest 2.0 certificate">
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-freshers'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D"
-        alt="Champion - Fresher's Quest 2.0">
+        alt="Champion - Fresher's Quest 2.0" loading="lazy">
     </div>
   </div>
 
@@ -3013,7 +3110,7 @@
 
       <div class="v-foot">
         <p class="v-credit">Researched, scripted &amp; produced by me during my Marketing Internship at Programming
-          Hero · 3:39 · Bangla</p>
+          Hero</p>
         <a class="v-yt" href="https://youtu.be/EpAYtlnugR0" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path
@@ -3032,14 +3129,18 @@
     const nav = document.getElementById('main-nav');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 60);
-    });
+    }, { passive: true });
 
     // Mobile nav
     function toggleNav() {
-      document.getElementById('nav-links').classList.toggle('open');
+      const links = document.getElementById('nav-links');
+      const btn = document.getElementById('nav-toggle');
+      const isOpen = links.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
     }
     function closeNav() {
       document.getElementById('nav-links').classList.remove('open');
+      document.getElementById('nav-toggle').setAttribute('aria-expanded', 'false');
     }
 
     // Scroll reveal with IntersectionObserver
@@ -3141,28 +3242,30 @@
     const heroStats = document.querySelector('.hero-stats');
     if (heroStats) heroObserver.observe(heroStats);
 
-    // Cert card tilt effect
-    document.querySelectorAll('.cert-card').forEach(card => {
-      card.addEventListener('mousemove', e => {
-        const rect = card.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width - 0.5;
-        const y = (e.clientY - rect.top) / rect.height - 0.5;
-        card.style.transform = `translateY(-4px) perspective(600px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
-        const shine = card.querySelector('.cert-shine');
-        if (shine) {
-          shine.style.left = `${e.clientX - rect.left - rect.width}px`;
-          shine.style.top = `${e.clientY - rect.top - rect.height}px`;
-        }
+    // Cert card tilt effect (skip if user prefers reduced motion)
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.cert-card').forEach(card => {
+        card.addEventListener('mousemove', e => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `translateY(-4px) perspective(600px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
+          const shine = card.querySelector('.cert-shine');
+          if (shine) {
+            shine.style.left = `${e.clientX - rect.left - rect.width}px`;
+            shine.style.top = `${e.clientY - rect.top - rect.height}px`;
+          }
+        }, { passive: true });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
       });
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-      });
-    });
+    }
 
     // Featured video popup
     const VIDEO_ID = 'EpAYtlnugR0';
     const VIDEO_END = 216;              // runtime is 219s — stop 3s early so the end screen never renders
-    const AUTO_OPEN_DELAY = 5000;
+    const AUTO_OPEN_DELAY = 12000;
     const AUTO_OPEN_ONCE_PER_SESSION = true;
 
     const vModal = document.getElementById('video-modal');
