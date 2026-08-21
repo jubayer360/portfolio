@@ -766,6 +766,34 @@
       font-weight: 600;
     }
 
+    .exp-link {
+      color: var(--accent);
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: var(--border-accent);
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 3px;
+      transition: color 0.2s, text-decoration-color 0.2s;
+    }
+
+    .exp-link:hover {
+      color: var(--accent-bright);
+      text-decoration-color: var(--accent-bright);
+    }
+
+    .exp-link svg {
+      width: 14px;
+      height: 14px;
+      vertical-align: -2px;
+      margin-right: 4px;
+      transition: transform 0.25s var(--ease-spring);
+    }
+
+    .exp-link:hover svg {
+      transform: scale(1.15);
+    }
+
 
     /* ═══════════════════════
    SKILLS & EDUCATION
@@ -1522,6 +1550,8 @@
       background: #ffffff;
       border: 1px solid var(--border-medium);
       color: var(--text-primary);
+      /* Buttons don't inherit font-family; the fallback face has no × glyph */
+      font-family: var(--font-body);
       font-size: 1.2rem;
       width: 40px;
       height: 40px;
@@ -1541,6 +1571,533 @@
       border-color: var(--accent);
       color: #fff;
       transform: scale(1.05);
+    }
+
+
+    /* ═══════════════════════
+   FEATURED VIDEO MODAL
+   ═══════════════════════ */
+
+    .v-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9998;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(14px, 4vw, 40px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.45s var(--ease-out);
+    }
+
+    .v-modal.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .v-scrim {
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(16px) saturate(1.1);
+      -webkit-backdrop-filter: blur(16px) saturate(1.1);
+    }
+
+    .v-card {
+      --v-pad: clamp(20px, 3.5vw, 34px);
+      position: relative;
+      width: min(940px, 100%);
+      max-height: 100%;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 40px 90px -24px rgba(15, 23, 42, 0.45);
+      opacity: 0;
+      transform: translateY(34px) scale(0.965);
+      transition: transform 0.6s var(--ease-out), opacity 0.4s var(--ease-out);
+    }
+
+    .v-modal.open .v-card {
+      opacity: 1;
+      transform: none;
+    }
+
+    .v-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-accent);
+      border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    }
+
+    .v-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-glass);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: var(--text-tertiary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 5;
+      transition: all 0.2s var(--ease-out);
+    }
+
+    .v-close svg {
+      width: 15px;
+      height: 15px;
+    }
+
+    .v-close:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      transform: rotate(90deg);
+    }
+
+    .v-head {
+      padding: clamp(24px, 3vw, 32px) clamp(56px, 8vw, 70px) clamp(16px, 2vw, 20px) var(--v-pad);
+    }
+
+    .v-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.66rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-dim);
+      border: 1px solid var(--border-accent);
+      padding: 6px 13px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .v-eyebrow i {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: vPulse 2.2s var(--ease-out) infinite;
+    }
+
+    @keyframes vPulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.45;
+        transform: scale(0.75);
+      }
+    }
+
+    .v-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.3rem, 3.6vw, 1.95rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--text-primary);
+    }
+
+    .v-hook {
+      margin-top: 10px;
+      font-size: clamp(0.84rem, 1.6vw, 0.94rem);
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 72ch;
+    }
+
+    .v-stage {
+      position: relative;
+      margin: 0 var(--v-pad);
+      aspect-ratio: 16 / 9;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: #0b1220;
+      box-shadow: 0 18px 44px -20px rgba(15, 23, 42, 0.55), 0 0 0 4px rgba(37, 99, 235, 0.07);
+    }
+
+    .v-stage iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Narrow the whole card on short screens so the 16:9 stage fits without scrolling */
+    @media (min-width: 700px) {
+      .v-card {
+        width: min(940px, 100%, max(420px, (100dvh - 470px) * 16 / 9) + 2 * var(--v-pad));
+      }
+    }
+
+    .v-poster {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      background: none;
+      overflow: hidden;
+      cursor: pointer;
+      transition: opacity 0.55s var(--ease-out), visibility 0.55s;
+    }
+
+    .v-stage.playing .v-poster {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .v-poster img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.9s var(--ease-out);
+    }
+
+    .v-poster:hover img,
+    .v-poster:focus-visible img {
+      transform: scale(1.045);
+    }
+
+    .v-poster-veil {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 52%, rgba(15, 23, 42, 0.34), rgba(15, 23, 42, 0.1) 58%),
+        linear-gradient(to top, rgba(15, 23, 42, 0.62), rgba(15, 23, 42, 0) 46%);
+      transition: opacity 0.45s var(--ease-out);
+    }
+
+    .v-poster:hover .v-poster-veil,
+    .v-poster:focus-visible .v-poster-veil {
+      opacity: 0.7;
+    }
+
+    .v-play {
+      position: absolute;
+      top: 62%;
+      left: 50%;
+      width: clamp(44px, 6vw, 56px);
+      height: clamp(44px, 6vw, 56px);
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: var(--gradient-accent);
+      box-shadow: 0 16px 38px -10px rgba(37, 99, 235, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      transition: transform 0.45s var(--ease-spring), box-shadow 0.4s var(--ease-out), opacity 0.3s var(--ease-out);
+    }
+
+    .v-play::before {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .v-play::after {
+      content: '';
+      position: absolute;
+      inset: -5px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 255, 255, 0.5);
+      animation: vRipple 2.8s var(--ease-out) infinite;
+    }
+
+    @keyframes vRipple {
+      0% {
+        transform: scale(1);
+        opacity: 0.6;
+      }
+
+      70%,
+      100% {
+        transform: scale(1.65);
+        opacity: 0;
+      }
+    }
+
+    .v-poster:hover .v-play,
+    .v-poster:focus-visible .v-play {
+      transform: translate(-50%, -50%) scale(1.08);
+      box-shadow: 0 20px 48px -10px rgba(37, 99, 235, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    }
+
+    .v-play svg {
+      width: 36%;
+      height: 36%;
+      margin-left: 9%;
+      filter: drop-shadow(0 2px 4px rgba(15, 23, 42, 0.3));
+    }
+
+    .v-poster-dur {
+      position: absolute;
+      right: clamp(12px, 2vw, 18px);
+      bottom: clamp(12px, 2vw, 18px);
+      font-size: 0.7rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.04em;
+      color: #fff;
+      background: rgba(15, 23, 42, 0.62);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 5px 11px;
+      border-radius: 999px;
+    }
+
+    .v-poster-spin {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(11, 18, 32, 0.5);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s var(--ease-out);
+    }
+
+    .v-stage.loading .v-poster-spin {
+      opacity: 1;
+    }
+
+    .v-stage.loading .v-play {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    .v-spinner {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 2px solid rgba(255, 255, 255, 0.16);
+      border-top-color: var(--accent-bright);
+      animation: vSpin 0.8s linear infinite;
+    }
+
+    @keyframes vSpin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .v-endcard {
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-align: center;
+      padding: clamp(20px, 4vw, 32px);
+      background: linear-gradient(155deg, #0f172a, #1e3a8a);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s var(--ease-out);
+    }
+
+    .v-endcard.show {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .v-endcard-title {
+      font-family: var(--font-heading);
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: #fff;
+    }
+
+    .v-endcard-sub {
+      font-size: clamp(0.78rem, 1.8vw, 0.88rem);
+      color: rgba(226, 232, 240, 0.78);
+      max-width: 42ch;
+      line-height: 1.6;
+    }
+
+    .v-endcard-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .v-btn {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 999px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.25s var(--ease-out);
+    }
+
+    .v-btn-primary {
+      background: #fff;
+      color: var(--text-primary);
+    }
+
+    .v-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px -10px rgba(0, 0, 0, 0.6);
+    }
+
+    .v-btn-ghost {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.28);
+      color: #fff;
+    }
+
+    .v-btn-ghost:hover {
+      background: rgba(255, 255, 255, 0.18);
+      transform: translateY(-2px);
+    }
+
+    .v-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: clamp(16px, 2.4vw, 22px) var(--v-pad) 0;
+    }
+
+    .v-stat {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px 10px;
+      text-align: center;
+      transition: border-color 0.25s, transform 0.25s var(--ease-out);
+    }
+
+    .v-stat:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+    }
+
+    .v-stat b {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: clamp(0.98rem, 2.6vw, 1.25rem);
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .v-stat span {
+      display: block;
+      margin-top: 3px;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .v-foot {
+      padding: clamp(16px, 2.4vw, 22px) var(--v-pad) clamp(20px, 3vw, 26px);
+      text-align: center;
+    }
+
+    .v-credit {
+      font-size: 0.76rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+    }
+
+    .v-yt {
+      display: none;
+      align-items: center;
+      gap: 8px;
+      flex: none;
+      font-size: 0.79rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-dim);
+      border: 1px solid var(--border-accent);
+      padding: 9px 16px;
+      border-radius: 999px;
+      transition: all 0.25s var(--ease-out);
+    }
+
+    .v-yt:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px -10px var(--accent);
+    }
+
+    @media (max-width: 560px) {
+      .v-stat span {
+        font-size: 0.56rem;
+        letter-spacing: 0.08em;
+      }
+
+      .v-foot {
+        text-align: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .v-modal,
+      .v-card,
+      .v-endcard {
+        transition-duration: 0.01ms;
+      }
+
+      .v-eyebrow i,
+      .v-spinner,
+      .v-play::after {
+        animation: none;
+      }
+
+      .v-poster img {
+        transition: none;
+      }
     }
 
 
@@ -1805,37 +2362,6 @@
           combination of strategic thinking and creative instinct. I take full ownership of everything I touch.</p>
         <p>My experience spans large-scale operations management, content strategy, brand campaigns, quality assurance,
           and cross-functional team leadership.</p>
-        <div class="about-contact-list">
-          <div class="about-contact-item">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <a href="mailto:hi@jubayer.pro">hi@jubayer.pro</a>
-          </div>
-          <div class="about-contact-item">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-            </svg>
-            <a href="tel:+8801797799424">+880 179 779 9424</a>
-          </div>
-          <div class="about-contact-item">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-              <circle cx="4" cy="4" r="2" />
-            </svg>
-            <a href="https://linkedin.com/in/ahmadjubayer" target="_blank"
-              rel="noopener">linkedin.com/in/ahmadjubayer</a>
-          </div>
-          <div class="about-contact-item">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-            </svg>
-            <a href="https://jubayer.pro" target="_blank" rel="noopener">jubayer.pro</a>
-          </div>
-        </div>
       </div>
 
       <div class="about-aside reveal reveal-d3">
@@ -1903,7 +2429,14 @@
             <div class="tl-date">Sep 2025 – Jan 2026</div>
           </div>
           <ul class="exp-bullets">
-            <li>Created impactful contents to attract and engage learners &amp; managed social media presence</li>
+            <li>Created impactful contents like <a class="exp-link" href="https://youtu.be/EpAYtlnugR0"
+                onclick="return openVideoModal(false);" title="Watch it here">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="m10 8 6 4-6 4V8z" fill="currentColor" stroke="none" />
+                </svg>The Computer That Refused to Fail</a> to attract and engage learners &amp; managed social media
+              presence</li>
             <li>Collaborated with teams to optimize campaigns for the <strong>Web Development bootcamp</strong></li>
             <li>Engaged the community with programming related queries and discussions</li>
           </ul>
@@ -1992,57 +2525,6 @@
     </div>
   </section>
 
-
-  <!-- ═══ SKILLS & EDUCATION ═══ -->
-  <section id="skills">
-    <div class="reveal">
-      <p class="section-label">Competencies &amp; Education</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">Built to <span class="accent">deliver</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
-    <div class="skills-layout">
-      <div class="reveal reveal-d2">
-        <p class="skills-group-title">Technical &amp; Tools</p>
-        <div class="skills-tags">
-          <span class="skill-tag featured">Google Workspace</span>
-          <span class="skill-tag featured">Google Apps Script</span>
-          <span class="skill-tag featured">Video Editing</span>
-          <span class="skill-tag">MS Office</span>
-          <span class="skill-tag">Canva</span>
-        </div>
-        <p class="skills-group-title">Leadership &amp; Strategy</p>
-        <div class="skills-tags">
-          <span class="skill-tag featured">Leadership</span>
-          <span class="skill-tag featured">Brand Management</span>
-          <span class="skill-tag featured">Content Management</span>
-          <span class="skill-tag">Analytical Ability</span>
-          <span class="skill-tag">Team Coordination</span>
-          <span class="skill-tag">Community Building</span>
-          <span class="skill-tag">Content Strategy</span>
-          <span class="skill-tag">Project Mgmt</span>
-        </div>
-      </div>
-      <div class="reveal reveal-d3">
-        <p class="skills-group-title">Education</p>
-        <div class="edu-card">
-          <div class="edu-degree">Bachelor of Business Administration</div>
-          <div class="edu-school">IBA, University of Rajshahi</div>
-          <div class="edu-date">Sep 2024 – Present</div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-degree">Higher Secondary Certificate · Science</div>
-          <div class="edu-school">Cantonment Public School &amp; College, BUSMS, Dinajpur</div>
-          <div class="edu-date">Class of 2022</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
   <!-- ═══ ACHIEVEMENTS ═══ -->
   <section id="achievements">
     <div class="reveal">
@@ -2084,14 +2566,6 @@
           alt="2nd Runner Up - Mapathon 2026" onclick="openModal('modal-mapathon')" loading="lazy">
       </div>
 
-      <div class="achievement-card">
-        <div class="achievement-num">04</div>
-        <div class="achievement-title">Outstanding Leader — Ignite 5.0</div>
-        <div class="achievement-desc">Recognized as an <strong>Outstanding Leader</strong> at Ignite 5.0, organized by
-          Rajshahi University Business Club.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1eDiyJBh5is1G6S0i-5XnAyJRgR-A9hNJ"
-          alt="Outstanding Leader - Ignite 5.0" onclick="openModal('modal-ignite')" loading="lazy">
-      </div>
 
       <div class="achievement-card">
         <div class="achievement-num">05</div>
@@ -2262,6 +2736,56 @@
       </div>
     </div>
   </section>
+
+    <!-- ═══ SKILLS & EDUCATION ═══ -->
+    <section id="skills">
+      <div class="reveal">
+        <p class="section-label">Competencies &amp; Education</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">Education & <span class="accent">Skills</span></h2>     </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
+      </div>
+      <div class="skills-layout">
+        <div class="reveal reveal-d2">
+          <p class="skills-group-title">Technical &amp; Tools</p>
+          <div class="skills-tags">
+            <span class="skill-tag featured">Google Workspace</span>
+            <span class="skill-tag featured">Google Apps Script</span>
+            <span class="skill-tag featured">Video Editing</span>
+            <span class="skill-tag">MS Office</span>
+            <span class="skill-tag">Canva</span>
+          </div>
+          <p class="skills-group-title">Leadership &amp; Strategy</p>
+          <div class="skills-tags">
+            <span class="skill-tag featured">Leadership</span>
+            <span class="skill-tag featured">Brand Management</span>
+            <span class="skill-tag featured">Content Management</span>
+            <span class="skill-tag">Analytical Ability</span>
+            <span class="skill-tag">Team Coordination</span>
+            <span class="skill-tag">Community Building</span>
+            <span class="skill-tag">Content Strategy</span>
+            <span class="skill-tag">Project Mgmt</span>
+          </div>
+        </div>
+        <div class="reveal reveal-d3">
+          <p class="skills-group-title">Education</p>
+          <div class="edu-card">
+            <div class="edu-degree">Bachelor of Business Administration</div>
+            <div class="edu-school">IBA, University of Rajshahi</div>
+            <div class="edu-date">Sep 2024 – Present</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-degree">Higher Secondary Certificate · Science</div>
+            <div class="edu-school">Cantonment Public School &amp; College, BUSMS, Dinajpur</div>
+            <div class="edu-date">Class of 2022</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
 
 
   <!-- ═══ REFERENCES ═══ -->
@@ -2439,6 +2963,69 @@
   </div>
 
 
+  <!-- ═══ FEATURED VIDEO POPUP ═══ -->
+  <div id="video-modal" class="v-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title"
+    aria-hidden="true">
+    <div class="v-scrim" onclick="closeVideoModal()"></div>
+
+    <div class="v-card">
+      <button class="v-close" id="video-close" onclick="closeVideoModal()" aria-label="Close video">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+          aria-hidden="true">
+          <path d="M6 6 18 18M18 6 6 18" />
+        </svg>
+      </button>
+
+      <div class="v-head">
+        <span class="v-eyebrow"><i></i>Featured Work · Programming Hero</span>
+        <h3 class="v-title" id="video-modal-title">The Computer That Refused to Fail</h3>
+        <p class="v-hook">384,000 km from Earth, three lives depended on a computer with 4 KB of RAM,  weaker than the
+          chip of a phone charger. Moments before landing, it overloaded anyway.</p>
+      </div>
+
+      <div class="v-stage" id="video-stage">
+        <button class="v-poster" id="video-poster" onclick="startVideo()"
+          aria-label="Play — The Computer That Refused to Fail">
+          <picture>
+            <source srcset="/images/Apollo11_Thumb.webp" type="image/webp">
+            <img src="/images/Apollo11_Thumb.jpg" width="1600" height="900" decoding="async" fetchpriority="low"
+              alt="The Computer That Refused to Fail — Apollo 11's 4 KB guidance computer">
+          </picture>
+          <span class="v-poster-veil"></span>
+          <span class="v-play">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M8 5.14v13.72L19 12 8 5.14Z" />
+            </svg>
+          </span>
+          <span class="v-poster-dur">3:39</span>
+          <span class="v-poster-spin"><span class="v-spinner"></span></span>
+        </button>
+        <div class="v-endcard" id="video-endcard">
+          <p class="v-endcard-title">Efficiency beats theory.</p>
+          <p class="v-endcard-sub">However limited the resources, solid logic is still how history gets made.</p>
+          <div class="v-endcard-actions">
+            <button class="v-btn v-btn-primary" onclick="replayVideo()">Replay</button>
+            <a class="v-btn v-btn-ghost" href="https://youtu.be/EpAYtlnugR0" target="_blank" rel="noopener">Open on
+              YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="v-foot">
+        <p class="v-credit">Researched, scripted &amp; produced by me during my Marketing Internship at Programming
+          Hero · 3:39 · Bangla</p>
+        <a class="v-yt" href="https://youtu.be/EpAYtlnugR0" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+              d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z" />
+          </svg>
+          Watch on YouTube
+        </a>
+      </div>
+    </div>
+  </div>
+
+
   <!-- ═══ SCRIPTS ═══ -->
   <script>
     // Nav scroll effect
@@ -2571,7 +3158,176 @@
         card.style.transform = '';
       });
     });
+
+    // Featured video popup
+    const VIDEO_ID = 'EpAYtlnugR0';
+    const VIDEO_END = 216;              // runtime is 219s — stop 3s early so the end screen never renders
+    const AUTO_OPEN_DELAY = 5000;
+    const AUTO_OPEN_ONCE_PER_SESSION = true;
+
+    const vModal = document.getElementById('video-modal');
+    const vStage = document.getElementById('video-stage');
+    const vEndcard = document.getElementById('video-endcard');
+    let ytPlayer = null;
+    let ytApiPromise = null;
+    let autoOpenTimer = null;
+    let endWatcher = null;
+    let revealTimer = null;
+    let lastFocused = null;
+
+    function loadYouTubeApi() {
+      if (ytApiPromise) return ytApiPromise;
+      ytApiPromise = new Promise(resolve => {
+        if (window.YT && window.YT.Player) return resolve();
+        const prevReady = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = () => {
+          if (typeof prevReady === 'function') prevReady();
+          resolve();
+        };
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+      });
+      return ytApiPromise;
+    }
+
+    function mountPlayer(autoplay) {
+      const holder = document.createElement('div');
+      holder.id = 'yt-mount';
+      vStage.insertBefore(holder, vStage.firstChild);
+
+      ytPlayer = new YT.Player('yt-mount', {
+        host: 'https://www.youtube-nocookie.com',
+        videoId: VIDEO_ID,
+        playerVars: {
+          rel: 0,
+          modestbranding: 1,
+          color: 'white',
+          playsinline: 1,
+          iv_load_policy: 3,
+          end: VIDEO_END,
+          autoplay: autoplay ? 1 : 0
+        },
+        events: {
+          // If autoplay is refused the poster would sit there spinning, so reveal regardless
+          onReady: () => {
+            clearTimeout(revealTimer);
+            revealTimer = setTimeout(revealPlayer, 1800);
+          },
+          onStateChange: e => {
+            if (e.data === YT.PlayerState.ENDED) {
+              finishVideo();
+            } else if (e.data === YT.PlayerState.PLAYING) {
+              revealPlayer();
+              vEndcard.classList.remove('show');
+              watchForEnd();
+            } else {
+              clearInterval(endWatcher);
+            }
+          }
+        }
+      });
+    }
+
+    function revealPlayer() {
+      clearTimeout(revealTimer);
+      vStage.classList.remove('loading');
+      vStage.classList.add('playing');
+    }
+
+    function startVideo() {
+      if (ytPlayer) return;
+      vStage.classList.add('loading');
+      loadYouTubeApi().then(() => {
+        if (vModal.classList.contains('open') && !ytPlayer) mountPlayer(true);
+      });
+    }
+
+    // Cover the player before YouTube can paint its own end screen
+    function watchForEnd() {
+      clearInterval(endWatcher);
+      endWatcher = setInterval(() => {
+        if (!ytPlayer || typeof ytPlayer.getCurrentTime !== 'function') return;
+        if (ytPlayer.getCurrentTime() >= VIDEO_END - 0.6) finishVideo();
+      }, 200);
+    }
+
+    function finishVideo() {
+      clearInterval(endWatcher);
+      vEndcard.classList.add('show');
+      if (ytPlayer && typeof ytPlayer.pauseVideo === 'function') ytPlayer.pauseVideo();
+    }
+
+    function openVideoModal(autoplay) {
+      clearTimeout(autoOpenTimer);
+      if (!vModal.classList.contains('open')) {
+        lastFocused = document.activeElement;
+        vEndcard.classList.remove('show');
+        vModal.classList.add('open');
+        vModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        document.getElementById('video-close').focus({ preventScroll: true });
+        // Warm the API so pressing play is instant, but keep the poster until asked
+        loadYouTubeApi();
+        if (autoplay) startVideo();
+      }
+      return false;
+    }
+
+    function closeVideoModal() {
+      if (!vModal.classList.contains('open')) return;
+      vModal.classList.remove('open');
+      vModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      clearInterval(endWatcher);
+      clearTimeout(revealTimer);
+      if (lastFocused) lastFocused.focus({ preventScroll: true });
+      setTimeout(() => {
+        if (ytPlayer) {
+          try { ytPlayer.destroy(); } catch (err) { /* player already gone */ }
+          ytPlayer = null;
+        }
+        vStage.classList.remove('playing', 'loading');
+        vEndcard.classList.remove('show');
+      }, 450);
+    }
+
+    function replayVideo() {
+      vEndcard.classList.remove('show');
+      if (ytPlayer) {
+        ytPlayer.seekTo(0, true);
+        ytPlayer.playVideo();
+      }
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeVideoModal();
+    });
+
+    (function scheduleAutoOpen() {
+      let seen = false;
+      try { seen = sessionStorage.getItem('featuredVideoSeen') === '1'; } catch (err) { /* storage blocked */ }
+      if (AUTO_OPEN_ONCE_PER_SESSION && seen) return;
+
+      autoOpenTimer = setTimeout(() => {
+        if (document.querySelector('.img-modal.open')) return;
+        try { sessionStorage.setItem('featuredVideoSeen', '1'); } catch (err) { /* storage blocked */ }
+        openVideoModal(false);
+      }, AUTO_OPEN_DELAY);
+    })();
   </script>
+
+  <!-- Vercel Web Analytics -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+
+  <!-- Vercel Speed Insights -->
+  <script>
+    window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 
 </body>
 
