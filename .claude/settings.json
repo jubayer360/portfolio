@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "Bash(node -e ' *)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --window-size=420,1200 --virtual-time-budget=3000 --dump-dom \"file:///tmp/cert_m.html\")",
+      "Bash('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' --headless --disable-gpu --virtual-time-budget=5000 --enable-logging=stderr --window-size=1440,1200 --dump-dom file://__TRACKED_VAR__/index.html)",
+      "Bash(cp -R images /tmp/images)",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --virtual-time-budget=6000 --window-size=1440,1200 --dump-dom \"file:///tmp/_live_check.html\")",
+      "Bash(\"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome\" --headless --disable-gpu --virtual-time-budget=6000 --window-size=1440,1200 --dump-dom \"file:///tmp/_orig_check.html\")",
+      "Bash(rm -rf /tmp/cert_test.html /tmp/cert_test2.html /tmp/cert_m.html /tmp/cert_n320.html /tmp/cert_n360.html /tmp/measure.js /tmp/images /tmp/cb_*.png /tmp/ca_*.png /tmp/cert_before.png 2>/dev/null; echo cleaned)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}

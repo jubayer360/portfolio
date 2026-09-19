@@ -30,13 +30,19 @@ Jubayer Ahmad is a BBA student at IBA, University of Rajshahi who combines analy
 
 ## Certifications
 
+- [Analyzing and Visualizing Data with Power BI](https://learning.edx.org/course/course-v1:DavidsonX+DavidsonX.D005+3T2023/home) — Davidson College · edX (In Progress)
+- [Intermediate SQL](https://www.datacamp.com/completed/statement-of-accomplishment/course/deb0ecc73b196c378ddc5b3c035ad9afc766901b) — DataCamp (August 2026)
+- [Introduction to Looker](https://www.skills.google/public_profiles/b93ae3a2-bb16-40f7-a2c7-ea28f763ce13/badges/27251905) — Google Skills (August 2026)
+- [Introduction to SQL](https://www.datacamp.com/completed/statement-of-accomplishment/course/74d1c874f14169e3349111c3f41770134768c332) — DataCamp (August 2026)
+- [Pinterest Media Buyer](https://www.pinterestacademy.com/student/award/hAxwBxujZ7xXkFHJDc9jpD65) — Pinterest Academy (July 2026)
+- [Reddit Ads](https://adsformula.redditforbusiness.com/student/award/1BQd2NNMxAd6VjqeJCV3ko9A) — Reddit for Business (July 2026)
 - [Google Workspace with Gemini Specialization](https://www.coursera.org/account/accomplishments/specialization/4J54LP11XFVX) — Google · Coursera (June 2026)
 - [AI Fluency for Students](https://verify.skilljar.com/c/8buxvdetvbxn) — Anthropic (May 2026)
 - [Canva Visual Suite](https://www.canva.com/design-school/certification-award/0dae3592-0042-4530-8b5a-c7cf09c23677) — Canva (November 2025)
 
 ## Skills
 
-- **Technical & Tools:** Google Workspace, Google Apps Script, Video Editing, MS Office, Canva
+- **Technical & Tools:** Google Workspace, Google Apps Script, SQL, Power BI, Looker, Video Editing, MS Office, Canva
 - **Leadership & Strategy:** Leadership, Brand Management, Content Management, Analytical Ability, Team Coordination, Community Building, Content Strategy, Project Management
 
 ## Education

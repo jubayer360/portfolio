@@ -19,13 +19,15 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.jubayer.pro/">
   <meta property="og:title" content="Jubayer Ahmad | Portfolio">
-  <meta property="og:description" content="Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership.">
+  <meta property="og:description"
+    content="Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership.">
   <meta property="og:image" content="https://www.jubayer.pro/images/JubayerAhmad-main-image.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Jubayer Ahmad | Portfolio">
-  <meta name="twitter:description" content="Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership.">
+  <meta name="twitter:description"
+    content="Dynamic business student with proven expertise in operations, brand strategy, content management, and team leadership.">
   <meta name="twitter:image" content="https://www.jubayer.pro/images/JubayerAhmad-main-image.png">
 
   <script type="application/ld+json">
@@ -85,9 +87,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"></noscript>
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <style>
     /* ═══════════════════════════════════════
@@ -1089,8 +1093,8 @@
 
     .certs-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
     }
 
     .cert-link {
@@ -1100,110 +1104,179 @@
       border-radius: var(--radius-lg);
     }
 
+    .cert-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
     .cert-card {
       background: var(--bg-card);
       border: 1px solid var(--border-subtle);
       border-radius: var(--radius-lg);
       padding: 0;
       overflow: hidden;
-      transition: all 0.35s var(--ease-out);
+      /* transform kept out of the slow transition so the JS tilt tracks the cursor */
+      transition: border-color 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out), transform 0.12s var(--ease-out);
       position: relative;
       box-shadow: var(--shadow-sm);
       height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     .cert-link:hover .cert-card {
       border-color: var(--border-accent);
-      transform: translateY(-4px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-md);
     }
 
     .cert-card-top {
-      height: 6px;
+      height: 3px;
       background: var(--gradient-accent);
       opacity: 0.5;
       transition: opacity 0.35s;
+      flex: 0 0 auto;
     }
 
     .cert-link:hover .cert-card-top {
       opacity: 1;
     }
 
+    /* z-index 1 keeps the text above .cert-shine, which is absolutely
+       positioned and would otherwise paint on top of it */
     .cert-card-body {
-      padding: 28px 24px 24px;
+      padding: 16px 16px 14px;
+      position: relative;
+      z-index: 1;
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .cert-issuer-badge {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
+      gap: 6px;
+      padding: 4px 10px;
       background: var(--accent-dim);
       border-radius: 100px;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
+      min-height: 24px;
+      max-width: 100%;
     }
 
     .cert-issuer-icon {
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
+      flex: 0 0 16px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      font-size: 0.65rem;
+      font-size: 0.6rem;
+      line-height: 1;
       color: #fff;
+      overflow: hidden;
+      object-fit: contain;
     }
 
     .cert-issuer-icon.google {
       background: linear-gradient(135deg, #4285f4, #34a853);
     }
 
+    /* transparent plate for issuers rendered as a full-colour SVG/PNG mark */
+    .cert-issuer-icon.plain {
+      background: transparent;
+    }
+
     .cert-issuer-icon.anthropic {
-      background: linear-gradient(135deg, #d97706, #f59e0b);
+      background: #fff;
+      box-shadow: inset 0 0 0 1px var(--border-subtle);
+      padding: 2px;
     }
 
     .cert-issuer-icon.canva {
       background: linear-gradient(135deg, #00c4cc, #7b2ff7);
     }
 
+    .cert-issuer-icon.datacamp {
+      background: #03ef62;
+      color: #05192d;
+    }
+
+    .cert-issuer-icon.edx {
+      background: #cc0000;
+    }
+
+    .cert-issuer-icon.pinterest {
+      background: #e60023;
+    }
+
+    .cert-issuer-icon.reddit {
+      background: #ff4500;
+    }
+
     .cert-issuer-name {
-      font-size: 0.7rem;
+      font-size: 0.62rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--accent);
       font-weight: 600;
+      line-height: 1.2;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .cert-title {
       font-family: var(--font-heading);
-      font-size: 1.15rem;
+      font-size: 0.95rem;
       font-weight: 700;
-      margin-bottom: 8px;
+      margin-bottom: 5px;
       color: var(--text-primary);
-      line-height: 1.35;
+      line-height: 1.3;
+      text-wrap: balance;
     }
 
     .cert-platform {
-      font-size: 0.82rem;
+      font-size: 0.72rem;
       color: var(--text-secondary);
       margin-bottom: 12px;
     }
 
+    /* margin-top:auto pins the date to the card floor so every card in a
+       row lines up regardless of how many lines the title wraps to */
     .cert-date {
-      font-size: 0.7rem;
+      font-size: 0.62rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--text-tertiary);
       font-weight: 600;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
+      margin-top: auto;
     }
 
     .cert-date svg {
       color: var(--accent);
       opacity: 0.8;
+      flex: 0 0 auto;
+    }
+
+    .cert-date.in-progress {
+      color: #b45309;
+    }
+
+    .cert-date.in-progress svg {
+      color: #d97706;
+      opacity: 1;
+    }
+
+    .cert-card.is-progress .cert-card-top {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
     }
 
     .cert-shine {
@@ -1212,6 +1285,7 @@
       left: -50%;
       width: 200%;
       height: 200%;
+      z-index: 0;
       background: radial-gradient(circle, var(--accent-glow) 0%, transparent 50%);
       opacity: 0;
       transition: opacity 0.5s;
@@ -1894,11 +1968,9 @@
       align-items: center;
       justify-content: center;
       color: rgba(255, 255, 255, 0.95);
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.22) 0%,
-        rgba(255, 255, 255, 0.08) 100%
-      );
+      background: linear-gradient(135deg,
+          rgba(255, 255, 255, 0.22) 0%,
+          rgba(255, 255, 255, 0.08) 100%);
       backdrop-filter: blur(16px) saturate(1.6);
       -webkit-backdrop-filter: blur(16px) saturate(1.6);
       border: 1px solid rgba(255, 255, 255, 0.35);
@@ -1915,11 +1987,9 @@
       position: absolute;
       inset: 0;
       border-radius: 50%;
-      background: linear-gradient(
-        160deg,
-        rgba(255, 255, 255, 0.35) 0%,
-        transparent 50%
-      );
+      background: linear-gradient(160deg,
+          rgba(255, 255, 255, 0.35) 0%,
+          transparent 50%);
       pointer-events: none;
     }
 
@@ -1948,11 +2018,9 @@
     .v-poster:hover .v-play,
     .v-poster:focus-visible .v-play {
       transform: translate(-50%, -50%) scale(1.1);
-      background: linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.32) 0%,
-        rgba(255, 255, 255, 0.14) 100%
-      );
+      background: linear-gradient(135deg,
+          rgba(255, 255, 255, 0.32) 0%,
+          rgba(255, 255, 255, 0.14) 100%);
       border-color: rgba(255, 255, 255, 0.5);
       box-shadow:
         0 12px 40px rgba(0, 0, 0, 0.3),
@@ -2304,7 +2372,7 @@
 
     @media (max-width: 1024px) {
       .certs-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       }
     }
 
@@ -2428,7 +2496,8 @@
       <li><a href="#extracurriculars" onclick="closeNav()">Extracurriculars</a></li>
       <li><a href="#contact" onclick="closeNav()">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+    <button class="nav-toggle" id="nav-toggle" onclick="toggleNav()" aria-label="Toggle menu" aria-expanded="false"
+      aria-controls="nav-links">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -2436,444 +2505,620 @@
 
   <!-- ═══ HERO ═══ -->
   <main>
-  <section id="hero">
-    <div class="hero-text">
-      <p class="hero-eyebrow">Business Student & Strategic Leader</p>
-      <h1 class="hero-name">Jubayer<br><span class="accent">Ahmad</span></h1>
-      <p class="hero-tagline">Operations, brand strategy, and content - delivered at scale. I build systems, lead teams,
-        and craft narratives that move people to action.</p>
-      <div class="hero-actions">
-        <a href="#contact" class="btn-primary">Get in touch</a>
-        <a href="#experience" class="btn-ghost">View experience</a>
-        <a href="https://linkedin.com/in/ahmadjubayer" target="_blank" class="btn-ghost btn-icon" aria-label="LinkedIn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-          </svg>
-        </a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat-item">
-          <div class="stat-number">30<span>K+</span></div>
-          <div class="stat-label">Lives Impacted</div>
+    <section id="hero">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Business Student & Strategic Leader</p>
+        <h1 class="hero-name">Jubayer<br><span class="accent">Ahmad</span></h1>
+        <p class="hero-tagline">Operations, brand strategy, and content - delivered at scale. I build systems, lead
+          teams,
+          and craft narratives that move people to action.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Get in touch</a>
+          <a href="#experience" class="btn-ghost">View experience</a>
+          <a href="https://linkedin.com/in/ahmadjubayer" target="_blank" class="btn-ghost btn-icon"
+            aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </svg>
+          </a>
         </div>
-        <div class="stat-item">
-          <div class="stat-number">4<span>+</span></div>
-          <div class="stat-label">Years Leading</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">5<span>+</span></div>
-          <div class="stat-label">Orgs Led</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-image-wrap">
-      <div class="hero-image-frame">
-        <picture>
-          <source srcset="images/JubayerAhmad-main-image.webp" type="image/webp">
-          <img src="images/JubayerAhmad-main-image.png" alt="Jubayer Ahmad" width="380" height="475" fetchpriority="high">
-        </picture>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══ ABOUT ═══ -->
-  <section id="about">
-    <div class="reveal">
-      <p class="section-label">About me</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">A leader who <span class="accent">executes</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
-    <div class="about-grid">
-      <div class="about-text reveal reveal-d2">
-        <p>I'm a BBA student at <strong>IBA, University of Rajshahi</strong> who combines analytical strategy with
-          storytelling flair. I've led operations at scale, managing large teams, coordinating complex workflows, and
-          delivering results under pressure.</p>
-        <p>From spotting inefficiencies and designing smarter workflows, leveraging tools like AI automation, Google
-          Apps Script, and no-code platforms, to building brand campaigns that convert, I bring a meaningful
-          combination of strategic thinking and creative instinct. I take full ownership of everything I touch.</p>
-        <p>My experience spans large-scale operations management, content strategy, brand campaigns, quality assurance,
-          and cross-functional team leadership.</p>
-      </div>
-
-      <div class="about-aside reveal reveal-d3">
-        <div class="about-skill-blocks">
-          <div class="skill-block">
-            <div class="skill-block-name">Google Workspace</div>
-            <div class="skill-block-cat">Productivity</div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">30<span>K+</span></div>
+            <div class="stat-label">Lives Impacted</div>
           </div>
-          <div class="skill-block">
-            <div class="skill-block-name">Video Editing</div>
-            <div class="skill-block-cat">Creative</div>
+          <div class="stat-item">
+            <div class="stat-number">4<span>+</span></div>
+            <div class="stat-label">Years Leading</div>
           </div>
-          <div class="skill-block">
-            <div class="skill-block-name">Apps Script</div>
-            <div class="skill-block-cat">Technical</div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-block-name">Leadership</div>
-            <div class="skill-block-cat">Management</div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-block-name">Content Mgmt</div>
-            <div class="skill-block-cat">Strategy</div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-block-name">MS Office</div>
-            <div class="skill-block-cat">Productivity</div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-block-name">Canva</div>
-            <div class="skill-block-cat">Design</div>
-          </div>
-          <div class="skill-block">
-            <div class="skill-block-name">Brand Mgmt</div>
-            <div class="skill-block-cat">Marketing</div>
+          <div class="stat-item">
+            <div class="stat-number">5<span>+</span></div>
+            <div class="stat-label">Orgs Led</div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <picture>
+            <source srcset="images/JubayerAhmad-main-image.webp" type="image/webp">
+            <img src="images/JubayerAhmad-main-image.png" alt="Jubayer Ahmad" width="380" height="475"
+              fetchpriority="high">
+          </picture>
+        </div>
+      </div>
+    </section>
 
 
-  <!-- ═══ EXPERIENCE ═══ -->
-  <section id="experience">
-    <div class="reveal">
-      <p class="section-label">Professional Journey</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">Where I've <span class="accent">led</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about">
+      <div class="reveal">
+        <p class="section-label">About me</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">A leader who <span class="accent">executes</span></h2>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal reveal-d2">
+          <p>I'm a BBA student at <strong>IBA, University of Rajshahi</strong> who combines analytical strategy with
+            storytelling flair. I've led operations at scale, managing large teams, coordinating complex workflows, and
+            delivering results under pressure.</p>
+          <p>From spotting inefficiencies and designing smarter workflows, leveraging tools like AI automation, Google
+            Apps Script, and no-code platforms, to building brand campaigns that convert, I bring a meaningful
+            combination of strategic thinking and creative instinct. I take full ownership of everything I touch.</p>
+          <p>My experience spans large-scale operations management, content strategy, brand campaigns, quality
+            assurance,
+            and cross-functional team leadership.</p>
+        </div>
 
-    <div class="timeline reveal reveal-d2">
-
-      <div class="tl-item">
-        <div class="tl-marker"></div>
-        <div class="tl-content">
-          <div class="tl-head">
-            <div>
-              <div class="tl-role">Marketing Intern</div>
-              <div class="tl-company">Programming Hero · Remote</div>
+        <div class="about-aside reveal reveal-d3">
+          <div class="about-skill-blocks">
+            <div class="skill-block">
+              <div class="skill-block-name">Google Workspace</div>
+              <div class="skill-block-cat">Productivity</div>
             </div>
-            <div class="tl-date">Sep 2025 – Jan 2026</div>
-          </div>
-          <ul class="exp-bullets">
-            <li>Created impactful contents like <a class="exp-link" href="https://youtu.be/EpAYtlnugR0"
-                onclick="return openVideoModal(false);" title="Watch it here">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="m10 8 6 4-6 4V8z" fill="currentColor" stroke="none" />
-                </svg>The Computer That Refused to Fail</a> to attract and engage learners &amp; managed social media
-              presence</li>
-            <li>Collaborated with teams to optimize campaigns for the <strong>Web Development bootcamp</strong></li>
-            <li>Engaged the community with programming related queries and discussions</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-marker"></div>
-        <div class="tl-content">
-          <div class="tl-head">
-            <div>
-              <div class="tl-role">Branch Incharge</div>
-              <div class="tl-company">ACHIEVE Exam Center · Onsite</div>
+            <div class="skill-block">
+              <div class="skill-block-name">SQL</div>
+              <div class="skill-block-cat">Data</div>
             </div>
-            <div class="tl-date">Sep 2024 – Feb 2025</div>
-          </div>
-          <ul class="exp-bullets">
-            <li>Led the full launching operations of ACS's first offline exam center, managing <strong>1,300+ enrolled
-                students</strong> with 400-600 daily attendance</li>
-            <li>Implemented automated systems using <strong>Google Apps Script</strong></li>
-            <li>Handled technical systems and collaborated with developers for the tech operations</li>
-            <li>Trained and supervised the entire human resources team</li>
-            <li>Maintained communication with ACS directors, students and guardians</li>
-            <li>Wrote engaging contents &amp; managed a vibrant student community</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-marker"></div>
-        <div class="tl-content">
-          <div class="tl-head">
-            <div>
-              <div class="tl-role">Course Coordinator</div>
-              <div class="tl-company">Academy of Champion Students (ACS) · Hybrid</div>
+            <div class="skill-block">
+              <div class="skill-block-name">Apps Script</div>
+              <div class="skill-block-cat">Technical</div>
             </div>
-            <div class="tl-date">Feb 2024 – Sep 2024</div>
-          </div>
-          <ul class="exp-bullets">
-            <li>Managed content distribution pipeline reaching <strong>5,000+ active learners daily</strong></li>
-            <li>Executed project coordination for Medical Admission Batch through an exclusive web application</li>
-            <li>Managed cross-team communication with <strong>11+ teachers and 15+ designers &amp; typists</strong> to
-              ensure quality content delivery</li>
-            <li>Hosted live classes and managed content archive</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-marker"></div>
-        <div class="tl-content">
-          <div class="tl-head">
-            <div>
-              <div class="tl-role">Team Lead, Remote Coordinators</div>
-              <div class="tl-company">Apar's Classroom · Remote</div>
+            <div class="skill-block">
+              <div class="skill-block-name">Power BI</div>
+              <div class="skill-block-cat">Analytics</div>
             </div>
-            <div class="tl-date">Feb 2021 – Aug 2022</div>
-          </div>
-          <ul class="exp-bullets">
-            <li>Led 7+ coordinators of crash courses for <strong>30,000+ SSC &amp; HSC students</strong></li>
-            <li>Maintained regular communication with <strong>10+ teachers and 15+ designers &amp; typists</strong></li>
-            <li>Managed the content libraries across different platforms</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="tl-item tl-last">
-        <div class="tl-marker"></div>
-        <div class="tl-content">
-          <div class="tl-head">
-            <div>
-              <div class="tl-role">Team Lead, QAC</div>
-              <div class="tl-company">10 Minute School · K-12 OnCo Project · Remote</div>
+            <div class="skill-block">
+              <div class="skill-block-name">Looker</div>
+              <div class="skill-block-cat">Analytics</div>
             </div>
-            <div class="tl-date">Apr 2021 – May 2022</div>
+            <div class="skill-block">
+              <div class="skill-block-name">Brand Mgmt</div>
+              <div class="skill-block-cat">Marketing</div>
+            </div>
+            <div class="skill-block">
+              <div class="skill-block-name">Video Editing</div>
+              <div class="skill-block-cat">Creative</div>
+            </div>
+            <div class="skill-block">
+              <div class="skill-block-name">Canva</div>
+              <div class="skill-block-cat">Design</div>
+            </div>
+            <div class="skill-block">
+              <div class="skill-block-name">Leadership</div>
+              <div class="skill-block-cat">Management</div>
+            </div>
+            <div class="skill-block">
+              <div class="skill-block-name">Content Mgmt</div>
+              <div class="skill-block-cat">Strategy</div>
+            </div>
           </div>
-          <ul class="exp-bullets">
-            <li>Executed quality assurance projects serving <strong>thousands of students nationwide</strong></li>
-            <li>Led <strong>7+ member team</strong> overseeing content review workflow from intake to expert assignment
-            </li>
-            <li>Managed content review for <strong>Classes 6-11</strong></li>
-          </ul>
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
 
-  <!-- ═══ ACHIEVEMENTS ═══ -->
-  <section id="achievements">
-    <div class="reveal">
-      <p class="section-label">Achievements</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">Moments that <span class="accent">matter</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="achievements-grid reveal reveal-d2">
-
-      <div class="achievement-card">
-        <div class="achievement-num">01</div>
-        <div class="achievement-title">Champion — Agents of Change 4.0</div>
-        <div class="achievement-desc">Organized by <strong>Teach for Bangladesh</strong>. Won the national leadership
-          and social impact competition for emerging changemakers.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA=w640"
-          alt="Champion - Agents of Change 4.0" onclick="openModal('modal-aoc')" loading="lazy" width="600" height="400">
+    <!-- ═══ EXPERIENCE ═══ -->
+    <section id="experience">
+      <div class="reveal">
+        <p class="section-label">Professional Journey</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">Where I've <span class="accent">led</span></h2>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
       </div>
 
-      <div class="achievement-card">
-        <div class="achievement-num">02</div>
-        <div class="achievement-title">1st Runner Up — CENNOVATION 2026</div>
-        <div class="achievement-desc">Organized by <strong>CEE, Islamic University of Technology (IUT)</strong>. Placed
-          1st Runner Up in a national innovation competition.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5=w640"
-          alt="1st Runner Up - CENNOVATION 2026" onclick="openModal('modal-cennovation')" loading="lazy" width="600" height="400">
-      </div>
+      <div class="timeline reveal reveal-d2">
 
-      <div class="achievement-card">
-        <div class="achievement-num">03</div>
-        <div class="achievement-title">2nd Runner Up — Mapathon 2026</div>
-        <div class="achievement-desc">Organized by <strong>Save the Children &amp; RIMES</strong>. Placed in the top 3
-          of a national geospatial mapping challenge.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj=w640"
-          alt="2nd Runner Up - Mapathon 2026" onclick="openModal('modal-mapathon')" loading="lazy" width="600" height="400">
-      </div>
-
-
-      <div class="achievement-card">
-        <div class="achievement-num">05</div>
-        <div class="achievement-title">Champion — Fresher's Quest 2.0</div>
-        <div class="achievement-desc">Won the flagship freshers' competition organized by <strong>Rajshahi University
-            Business Club</strong>.</div>
-        <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D=w640"
-          alt="Champion - Fresher's Quest 2.0" onclick="openModal('modal-freshers')" loading="lazy" width="600" height="400">
-      </div>
-
-    </div>
-  </section>
-
-
-  <!-- ═══ CERTIFICATIONS ═══ -->
-  <section id="certifications">
-    <div class="reveal">
-      <p class="section-label">Certifications</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">Verified <span class="accent">credentials</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="certs-grid reveal reveal-d2">
-
-      <a href="https://www.coursera.org/account/accomplishments/specialization/4J54LP11XFVX" target="_blank"
-        rel="noopener" class="cert-link">
-        <div class="cert-card">
-          <div class="cert-card-top"></div>
-          <div class="cert-shine"></div>
-          <div class="cert-card-body">
-            <div class="cert-issuer-badge">
-              <div class="cert-issuer-icon" style="background: transparent;">
-                <svg viewBox="0 0 48 48" width="18" height="18">
-                  <path fill="#EA4335"
-                    d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
-                  <path fill="#4285F4"
-                    d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
-                  <path fill="#FBBC05"
-                    d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
-                  <path fill="#34A853"
-                    d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
-                </svg>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <div class="tl-head">
+              <div>
+                <div class="tl-role">Marketing Intern</div>
+                <div class="tl-company">Programming Hero · Remote</div>
               </div>
-              <span class="cert-issuer-name">Google · Coursera</span>
+              <div class="tl-date">Sep 2025 – Jan 2026</div>
             </div>
-            <div class="cert-title">Google Workspace with Gemini Specialization</div>
-            <div class="cert-platform">Professional Certificate via Coursera</div>
-            <div class="cert-date">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-              Issued June 2026
-            </div>
+            <ul class="exp-bullets">
+              <li>Created impactful contents like <a class="exp-link" href="https://youtu.be/EpAYtlnugR0"
+                  onclick="return openVideoModal(false);" title="Watch it here">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m10 8 6 4-6 4V8z" fill="currentColor" stroke="none" />
+                  </svg>The Computer That Refused to Fail</a> to attract and engage learners &amp; managed social media
+                presence</li>
+              <li>Collaborated with teams to optimize campaigns for the <strong>Web Development bootcamp</strong></li>
+              <li>Engaged the community with programming related queries and discussions</li>
+            </ul>
           </div>
         </div>
-      </a>
 
-      <a href="https://verify.skilljar.com/c/8buxvdetvbxn" target="_blank" rel="noopener" class="cert-link">
-        <div class="cert-card">
-          <div class="cert-card-top"></div>
-          <div class="cert-shine"></div>
-          <div class="cert-card-body">
-            <div class="cert-issuer-badge">
-              <img src="images/anthropic-logo.png" alt="Anthropic" class="cert-issuer-icon" style="background: transparent; padding: 2px;" width="20" height="20" loading="lazy">
-              <span class="cert-issuer-name">Anthropic</span>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <div class="tl-head">
+              <div>
+                <div class="tl-role">Branch Incharge</div>
+                <div class="tl-company">ACHIEVE Exam Center · Onsite</div>
+              </div>
+              <div class="tl-date">Sep 2024 – Feb 2025</div>
             </div>
-            <div class="cert-title">AI Fluency for Students</div>
-            <div class="cert-platform">Anthropic Education Program</div>
-            <div class="cert-date">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-              Issued May 2026
-            </div>
+            <ul class="exp-bullets">
+              <li>Led the full launching operations of ACS's first offline exam center, managing <strong>1,300+ enrolled
+                  students</strong> with 400-600 daily attendance</li>
+              <li>Implemented automated systems using <strong>Google Apps Script</strong></li>
+              <li>Handled technical systems and collaborated with developers for the tech operations</li>
+              <li>Trained and supervised the entire human resources team</li>
+              <li>Maintained communication with ACS directors, students and guardians</li>
+              <li>Wrote engaging contents &amp; managed a vibrant student community</li>
+            </ul>
           </div>
         </div>
-      </a>
 
-      <a href="https://www.canva.com/design-school/certification-award/0dae3592-0042-4530-8b5a-c7cf09c23677"
-        target="_blank" rel="noopener" class="cert-link">
-        <div class="cert-card">
-          <div class="cert-card-top"></div>
-          <div class="cert-shine"></div>
-          <div class="cert-card-body">
-            <div class="cert-issuer-badge">
-              <div class="cert-issuer-icon canva">C</div>
-              <span class="cert-issuer-name">Canva</span>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <div class="tl-head">
+              <div>
+                <div class="tl-role">Course Coordinator</div>
+                <div class="tl-company">Academy of Champion Students (ACS) · Hybrid</div>
+              </div>
+              <div class="tl-date">Feb 2024 – Sep 2024</div>
             </div>
-            <div class="cert-title">Canva Visual Suite</div>
-            <div class="cert-platform">Canva Design School</div>
-            <div class="cert-date">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" />
-                <path d="M16 2v4M8 2v4M3 10h18" />
-              </svg>
-              Issued November 2025
-            </div>
+            <ul class="exp-bullets">
+              <li>Managed content distribution pipeline reaching <strong>5,000+ active learners daily</strong></li>
+              <li>Executed project coordination for Medical Admission Batch through an exclusive web application</li>
+              <li>Managed cross-team communication with <strong>11+ teachers and 15+ designers &amp; typists</strong> to
+                ensure quality content delivery</li>
+              <li>Hosted live classes and managed content archive</li>
+            </ul>
           </div>
         </div>
-      </a>
 
-    </div>
-  </section>
-
-
-  <!-- ═══ LEADERSHIP ═══ -->
-  <section id="extracurriculars">
-    <div class="reveal">
-      <p class="section-label">Extracurriculars</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">Beyond the <span class="accent">classroom</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
-
-    <div class="leadership-list">
-      <div class="leadership-card reveal reveal-d2">
-        <div class="leadership-header">
-          <div>
-            <div class="leadership-org">Rajshahi University Business Club (RUBC)</div>
-            <div class="leadership-role">Management Associate</div>
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <div class="tl-head">
+              <div>
+                <div class="tl-role">Team Lead, Remote Coordinators</div>
+                <div class="tl-company">Apar's Classroom · Remote</div>
+              </div>
+              <div class="tl-date">Feb 2021 – Aug 2022</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Led 7+ coordinators of crash courses for <strong>30,000+ SSC &amp; HSC students</strong></li>
+              <li>Maintained regular communication with <strong>10+ teachers and 15+ designers &amp; typists</strong>
+              </li>
+              <li>Managed the content libraries across different platforms</li>
+            </ul>
           </div>
-          <div class="leadership-date">Dec 2024 – Present · On Campus</div>
         </div>
-        <ul class="leadership-points">
-          <li>Automated core operations for <a href="/unravel_hexa/" target="_blank"><strong>Unravel Hexa</strong></a>
-            using serverless Google Apps Script workflows. Integrated webhooks, automated WhatsApp bots, and custom
-            portals to seamlessly process 300+ participants' data</li>
-          <li>Awarded as the top performer among the management associates.</li>
-          <li>Served as a key contributor at the grand finale of <a
-              href="https://www.linkedin.com/feed/update/urn:li:activity:7372983391169867776/"
-              target="_blank"><strong>CaseCation Season 2</strong></a>, a national business case competition, ensuring
-            seamless execution of the live event experience</li>
-          <li>Anchored <a
-              href="https://www.facebook.com/hello.rubc/posts/pfbid02iq62txJy8p7wigWLUCDxGbKJrj3egNgSe92r79nd5GRaqkgcHLUZjetHBmE2rinCl"
-              target="_blank"><strong>From Degree to Destination</strong></a> in collaboration with Nagad &amp; RUBC
-          </li>
-          <li>Produced <a href="https://docs.google.com/document/d/1LPfg24lZKO-QqlL8T3OLvo9_UX2vavwNT2cENbxqWic/"
-              target="_blank"><strong>5 high-impact promotional videos</strong></a> driving event participation
-            and social media presence</li>
-          <li>Built email automation for participants of <a href="https://github.com/jubayer360/Unilever_L2L_RU"
-              target="_blank"><strong>Unilever Learn to Lead</strong></a> — streamlining a high-volume communication
-            process end-to-end</li>
-        </ul>
+
+        <div class="tl-item tl-last">
+          <div class="tl-marker"></div>
+          <div class="tl-content">
+            <div class="tl-head">
+              <div>
+                <div class="tl-role">Team Lead, QAC</div>
+                <div class="tl-company">10 Minute School · K-12 OnCo Project · Remote</div>
+              </div>
+              <div class="tl-date">Apr 2021 – May 2022</div>
+            </div>
+            <ul class="exp-bullets">
+              <li>Executed quality assurance projects serving <strong>thousands of students nationwide</strong></li>
+              <li>Led <strong>7+ member team</strong> overseeing content review workflow from intake to expert
+                assignment
+              </li>
+              <li>Managed content review for <strong>Classes 6-11</strong></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ ACHIEVEMENTS ═══ -->
+    <section id="achievements">
+      <div class="reveal">
+        <p class="section-label">Achievements</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">Moments that <span class="accent">matter</span></h2>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
       </div>
 
-      <div class="leadership-card reveal reveal-d3">
-        <div class="leadership-header">
-          <div>
-            <div class="leadership-org">Biral Academy of Science</div>
-            <div class="leadership-role">Volunteer</div>
-          </div>
-          <div class="leadership-date">2017 – Present · Biral, Dinajpur</div>
+      <div class="achievements-grid reveal reveal-d2">
+
+        <div class="achievement-card">
+          <div class="achievement-num">01</div>
+          <div class="achievement-title">Champion — Agents of Change 4.0</div>
+          <div class="achievement-desc">Organized by <strong>Teach for Bangladesh</strong>. Won the national leadership
+            and social impact competition for emerging changemakers.</div>
+          <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA=w640"
+            alt="Champion - Agents of Change 4.0" onclick="openModal('modal-aoc')" loading="lazy" width="600"
+            height="400">
         </div>
-        <ul class="leadership-points">
-          <li>Anchored <strong>Biral Regional Math Olympiad 2025</strong> with 1,000+ participants</li>
-          <li>Organized 5+ camps on Physics, Math &amp; Programming Contests</li>
-          <li>Conducted a 3-day programming workshop</li>
-        </ul>
+
+        <div class="achievement-card">
+          <div class="achievement-num">02</div>
+          <div class="achievement-title">1st Runner Up — CENNOVATION 2026</div>
+          <div class="achievement-desc">Organized by <strong>CEE, Islamic University of Technology (IUT)</strong>.
+            Placed
+            1st Runner Up in a national innovation competition.</div>
+          <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1zWmSXB48KICzl2or48Eigt7hlQNdEjY5=w640"
+            alt="1st Runner Up - CENNOVATION 2026" onclick="openModal('modal-cennovation')" loading="lazy" width="600"
+            height="400">
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-num">03</div>
+          <div class="achievement-title">2nd Runner Up — Mapathon 2026</div>
+          <div class="achievement-desc">Organized by <strong>Save the Children &amp; RIMES</strong>. Placed in the top 3
+            of a national geospatial mapping challenge.</div>
+          <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj=w640"
+            alt="2nd Runner Up - Mapathon 2026" onclick="openModal('modal-mapathon')" loading="lazy" width="600"
+            height="400">
+        </div>
+
+
+        <div class="achievement-card">
+          <div class="achievement-num">05</div>
+          <div class="achievement-title">Champion — Fresher's Quest 2.0</div>
+          <div class="achievement-desc">Won the flagship freshers' competition organized by <strong>Rajshahi University
+              Business Club</strong>.</div>
+          <img class="achievement-img" src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D=w640"
+            alt="Champion - Fresher's Quest 2.0" onclick="openModal('modal-freshers')" loading="lazy" width="600"
+            height="400">
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
+
+
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section id="certifications">
+      <div class="reveal">
+        <p class="section-label">Certifications</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">Verified <span class="accent">credentials</span></h2>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="certs-grid reveal reveal-d2">
+
+        <!-- In Progress -->
+        <a href="https://learning.edx.org/course/course-v1:DavidsonX+DavidsonX.D005+3T2023/home" target="_blank"
+          rel="noopener" class="cert-link">
+          <div class="cert-card is-progress">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon edx">D</div>
+                <span class="cert-issuer-name">Davidson · edX</span>
+              </div>
+              <div class="cert-title">Analyzing &amp; Visualizing Data with Power BI</div>
+              <div class="cert-platform">Davidson College via edX</div>
+              <div class="cert-date in-progress">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+                In Progress
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- August 2026 -->
+        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/deb0ecc73b196c378ddc5b3c035ad9afc766901b"
+          target="_blank" rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon datacamp">D</div>
+                <span class="cert-issuer-name">DataCamp</span>
+              </div>
+              <div class="cert-title">Intermediate SQL</div>
+              <div class="cert-platform">DataCamp</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued August 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.skills.google/public_profiles/b93ae3a2-bb16-40f7-a2c7-ea28f763ce13/badges/27251905"
+          target="_blank" rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon plain">
+                  <svg viewBox="0 0 48 48" width="14" height="14">
+                    <path fill="#EA4335"
+                      d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+                    <path fill="#4285F4"
+                      d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                    <path fill="#FBBC05"
+                      d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+                    <path fill="#34A853"
+                      d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+                  </svg>
+                </div>
+                <span class="cert-issuer-name">Google</span>
+              </div>
+              <div class="cert-title">Introduction to Looker</div>
+              <div class="cert-platform">Google Skills</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued August 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/74d1c874f14169e3349111c3f41770134768c332"
+          target="_blank" rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon datacamp">D</div>
+                <span class="cert-issuer-name">DataCamp</span>
+              </div>
+              <div class="cert-title">Introduction to SQL</div>
+              <div class="cert-platform">DataCamp</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued August 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- July 2026 -->
+        <a href="https://www.pinterestacademy.com/student/award/hAxwBxujZ7xXkFHJDc9jpD65" target="_blank" rel="noopener"
+          class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon pinterest">P</div>
+                <span class="cert-issuer-name">Pinterest</span>
+              </div>
+              <div class="cert-title">Pinterest Media Buyer</div>
+              <div class="cert-platform">Pinterest Academy</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued July 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://adsformula.redditforbusiness.com/student/award/1BQd2NNMxAd6VjqeJCV3ko9A" target="_blank"
+          rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon reddit">R</div>
+                <span class="cert-issuer-name">Reddit</span>
+              </div>
+              <div class="cert-title">Reddit Ads</div>
+              <div class="cert-platform">Reddit for Business</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued July 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- June 2026 -->
+        <a href="https://www.coursera.org/account/accomplishments/specialization/4J54LP11XFVX" target="_blank"
+          rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon plain">
+                  <svg viewBox="0 0 48 48" width="14" height="14">
+                    <path fill="#EA4335"
+                      d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+                    <path fill="#4285F4"
+                      d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                    <path fill="#FBBC05"
+                      d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+                    <path fill="#34A853"
+                      d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+                  </svg>
+                </div>
+                <span class="cert-issuer-name">Google · Coursera</span>
+              </div>
+              <div class="cert-title">Google Workspace with Gemini Specialization</div>
+              <div class="cert-platform">Professional Certificate via Coursera</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued June 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- May 2026 -->
+        <a href="https://verify.skilljar.com/c/8buxvdetvbxn" target="_blank" rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <img src="images/anthropic-logo.png" alt="" class="cert-issuer-icon anthropic" width="16" height="16"
+                  loading="lazy" decoding="async">
+                <span class="cert-issuer-name">Anthropic</span>
+              </div>
+              <div class="cert-title">AI Fluency for Students</div>
+              <div class="cert-platform">Anthropic Education Program</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued May 2026
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <!-- November 2025 -->
+        <a href="https://www.canva.com/design-school/certification-award/0dae3592-0042-4530-8b5a-c7cf09c23677"
+          target="_blank" rel="noopener" class="cert-link">
+          <div class="cert-card">
+            <div class="cert-card-top"></div>
+            <div class="cert-shine"></div>
+            <div class="cert-card-body">
+              <div class="cert-issuer-badge">
+                <div class="cert-issuer-icon canva">C</div>
+                <span class="cert-issuer-name">Canva</span>
+              </div>
+              <div class="cert-title">Canva Visual Suite</div>
+              <div class="cert-platform">Canva Design School</div>
+              <div class="cert-date">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <path d="M16 2v4M8 2v4M3 10h18" />
+                </svg>
+                Issued November 2025
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ═══ LEADERSHIP ═══ -->
+    <section id="extracurriculars">
+      <div class="reveal">
+        <p class="section-label">Extracurriculars</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">Beyond the <span class="accent">classroom</span></h2>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="leadership-list">
+        <div class="leadership-card reveal reveal-d2">
+          <div class="leadership-header">
+            <div>
+              <div class="leadership-org">Rajshahi University Business Club (RUBC)</div>
+              <div class="leadership-role">Management Associate</div>
+            </div>
+            <div class="leadership-date">Dec 2024 – Present · On Campus</div>
+          </div>
+          <ul class="leadership-points">
+            <li>Automated core operations for <a href="/unravel_hexa/" target="_blank"><strong>Unravel Hexa</strong></a>
+              using serverless Google Apps Script workflows. Integrated webhooks, automated WhatsApp bots, and custom
+              portals to seamlessly process 300+ participants' data</li>
+            <li>Awarded as the top performer among the management associates.</li>
+            <li>Served as a key contributor at the grand finale of <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7372983391169867776/"
+                target="_blank"><strong>CaseCation Season 2</strong></a>, a national business case competition, ensuring
+              seamless execution of the live event experience</li>
+            <li>Anchored <a
+                href="https://www.facebook.com/hello.rubc/posts/pfbid02iq62txJy8p7wigWLUCDxGbKJrj3egNgSe92r79nd5GRaqkgcHLUZjetHBmE2rinCl"
+                target="_blank"><strong>From Degree to Destination</strong></a> in collaboration with Nagad &amp; RUBC
+            </li>
+            <li>Produced <a href="https://docs.google.com/document/d/1LPfg24lZKO-QqlL8T3OLvo9_UX2vavwNT2cENbxqWic/"
+                target="_blank"><strong>5 high-impact promotional videos</strong></a> driving event participation
+              and social media presence</li>
+            <li>Built email automation for participants of <a href="https://github.com/jubayer360/Unilever_L2L_RU"
+                target="_blank"><strong>Unilever Learn to Lead</strong></a> — streamlining a high-volume communication
+              process end-to-end</li>
+          </ul>
+        </div>
+
+        <div class="leadership-card reveal reveal-d3">
+          <div class="leadership-header">
+            <div>
+              <div class="leadership-org">Biral Academy of Science</div>
+              <div class="leadership-role">Volunteer</div>
+            </div>
+            <div class="leadership-date">2017 – Present · Biral, Dinajpur</div>
+          </div>
+          <ul class="leadership-points">
+            <li>Anchored <strong>Biral Regional Math Olympiad 2025</strong> with 1,000+ participants</li>
+            <li>Organized 5+ camps on Physics, Math &amp; Programming Contests</li>
+            <li>Conducted a 3-day programming workshop</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- ═══ SKILLS & EDUCATION ═══ -->
     <section id="skills">
@@ -2881,7 +3126,8 @@
         <p class="section-label">Competencies &amp; Education</p>
       </div>
       <div class="reveal reveal-d1">
-        <h2 class="section-title">Education & <span class="accent">Skills</span></h2>     </div>
+        <h2 class="section-title">Education & <span class="accent">Skills</span></h2>
+      </div>
       <div class="reveal reveal-d2">
         <div class="section-divider"></div>
       </div>
@@ -2891,10 +3137,14 @@
           <div class="skills-tags">
             <span class="skill-tag featured">Google Workspace</span>
             <span class="skill-tag featured">Google Apps Script</span>
-            <span class="skill-tag featured">Video Editing</span>
+            <span class="skill-tag featured">SQL</span>
+            <span class="skill-tag featured">Power BI</span>
+            <span class="skill-tag featured">Looker</span>
+            <span class="skill-tag">Video Editing</span>
             <span class="skill-tag">MS Office</span>
             <span class="skill-tag">Canva</span>
           </div>
+
           <p class="skills-group-title">Leadership &amp; Strategy</p>
           <div class="skills-tags">
             <span class="skill-tag featured">Leadership</span>
@@ -2922,133 +3172,133 @@
         </div>
       </div>
     </section>
-  
-  
 
 
-  <!-- ═══ REFERENCES ═══ -->
-  <section id="references">
-    <div class="reveal">
-      <p class="section-label">References</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">People who <span class="accent">vouch</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
 
-    <div class="references-grid reveal reveal-d2">
-      <div class="ref-card">
-        <div class="ref-name">Md. Numeri Sattar Apar</div>
-        <div class="ref-title">Managing Director, Academy of Champion Students (ACS)</div>
-        <a href="mailto:apar@aparsclassroom.com" class="ref-email">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          apar@aparsclassroom.com
-        </a>
+
+    <!-- ═══ REFERENCES ═══ -->
+    <section id="references">
+      <div class="reveal">
+        <p class="section-label">References</p>
       </div>
-      <div class="ref-card">
-        <div class="ref-name">Md. Anisul Islam</div>
-        <div class="ref-title">Senior Manager, Programming Hero</div>
-        <a href="mailto:anisul@programming-hero.com" class="ref-email">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg>
-          anisul@programming-hero.com
-        </a>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">People who <span class="accent">vouch</span></h2>
       </div>
-    </div>
-  </section>
-
-
-  <!-- ═══ CONTACT ═══ -->
-  <section id="contact">
-    <div class="reveal">
-      <p class="section-label">Let's connect</p>
-    </div>
-    <div class="reveal reveal-d1">
-      <h2 class="section-title">Have a project<br>in <span class="accent">mind?</span></h2>
-    </div>
-    <div class="reveal reveal-d2">
-      <div class="section-divider"></div>
-    </div>
-    <div class="contact-grid">
       <div class="reveal reveal-d2">
-        <p class="contact-intro">I'm open to internships, part-time roles, and collaborative projects — especially in
-          operations, brand strategy, content, and marketing.</p>
-        <div class="contact-links">
-          <a href="mailto:hi@jubayer.pro" class="contact-link-item">
-            <div class="contact-link-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-            </div>
-            hi@jubayer.pro
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="references-grid reveal reveal-d2">
+        <div class="ref-card">
+          <div class="ref-name">Md. Numeri Sattar Apar</div>
+          <div class="ref-title">Managing Director, Academy of Champion Students (ACS)</div>
+          <a href="mailto:apar@aparsclassroom.com" class="ref-email">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            apar@aparsclassroom.com
           </a>
-          <a href="https://linkedin.com/in/ahmadjubayer" target="_blank" rel="noopener" class="contact-link-item">
-            <div class="contact-link-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-            </div>
-            linkedin.com/in/ahmadjubayer
-          </a>
-          <a href="tel:+8801797799424" class="contact-link-item">
-            <div class="contact-link-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path
-                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-              </svg>
-            </div>
-            +880 179 779 9424
-          </a>
-          <a href="https://jubayer.pro" target="_blank" rel="noopener" class="contact-link-item">
-            <div class="contact-link-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="10" />
-                <path
-                  d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
-              </svg>
-            </div>
-            jubayer.pro
+        </div>
+        <div class="ref-card">
+          <div class="ref-name">Md. Anisul Islam</div>
+          <div class="ref-title">Senior Manager, Programming Hero</div>
+          <a href="mailto:anisul@programming-hero.com" class="ref-email">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            anisul@programming-hero.com
           </a>
         </div>
       </div>
-      <div class="reveal reveal-d3">
-        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
-          <input type="hidden" name="access_key" value="ae510d3c-91ff-4977-bfaa-49bc2e466de4">
-          <input type="hidden" name="subject" value="New message from jubayer.pro portfolio">
-          <input type="hidden" name="from_name" value="Portfolio Contact Form">
-          <div class="form-row">
-            <div class="form-field">
-              <label for="contact-name">Name</label>
-              <input type="text" id="contact-name" name="name" placeholder="Your name" required>
-            </div>
-            <div class="form-field">
-              <label for="contact-email">Email</label>
-              <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
-            </div>
-          </div>
-          <div class="form-field">
-            <label for="contact-subject">Subject</label>
-            <input type="text" id="contact-subject" name="subject_line" placeholder="What's this about?">
-          </div>
-          <div class="form-field">
-            <label for="contact-message">Message</label>
-            <textarea rows="5" id="contact-message" name="message"
-              placeholder="Tell me about your project or opportunity…" required></textarea>
-          </div>
-          <button type="submit" class="btn-send" id="submit-btn">Send Message</button>
-        </form>
+    </section>
+
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact">
+      <div class="reveal">
+        <p class="section-label">Let's connect</p>
       </div>
-    </div>
-  </section>
+      <div class="reveal reveal-d1">
+        <h2 class="section-title">Have a project<br>in <span class="accent">mind?</span></h2>
+      </div>
+      <div class="reveal reveal-d2">
+        <div class="section-divider"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal reveal-d2">
+          <p class="contact-intro">I'm open to internships, part-time roles, and collaborative projects — especially in
+            operations, brand strategy, content, and marketing.</p>
+          <div class="contact-links">
+            <a href="mailto:hi@jubayer.pro" class="contact-link-item">
+              <div class="contact-link-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              hi@jubayer.pro
+            </a>
+            <a href="https://linkedin.com/in/ahmadjubayer" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              linkedin.com/in/ahmadjubayer
+            </a>
+            <a href="tel:+8801797799424" class="contact-link-item">
+              <div class="contact-link-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.63a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                </svg>
+              </div>
+              +880 179 779 9424
+            </a>
+            <a href="https://jubayer.pro" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="contact-link-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path
+                    d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                </svg>
+              </div>
+              jubayer.pro
+            </a>
+          </div>
+        </div>
+        <div class="reveal reveal-d3">
+          <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="access_key" value="ae510d3c-91ff-4977-bfaa-49bc2e466de4">
+            <input type="hidden" name="subject" value="New message from jubayer.pro portfolio">
+            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-field">
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject_line" placeholder="What's this about?">
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea rows="5" id="contact-message" name="message"
+                placeholder="Tell me about your project or opportunity…" required></textarea>
+            </div>
+            <button type="submit" class="btn-send" id="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
 
   </main>
@@ -3065,14 +3315,16 @@
 
 
   <!-- ═══ MODALS ═══ -->
-  <div id="modal-aoc" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Agents of Change 4.0 certificate" inert>
+  <div id="modal-aoc" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true"
+    aria-label="Agents of Change 4.0 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-aoc'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1KrfyYOjBQf9-8diYp1ZeccsPmFu3XWxA"
         alt="Champion - Agents of Change 4.0" loading="lazy" width="1600" height="1322">
     </div>
   </div>
-  <div id="modal-cennovation" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="CENNOVATION 2026 certificate" inert>
+  <div id="modal-cennovation" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true"
+    aria-label="CENNOVATION 2026 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close"
         onclick="closeModal(document.getElementById('modal-cennovation'))">&times;</button>
@@ -3080,21 +3332,24 @@
         alt="1st Runner Up - CENNOVATION 2026" loading="lazy" width="1600" height="900">
     </div>
   </div>
-  <div id="modal-mapathon" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Mapathon 2026 certificate" inert>
+  <div id="modal-mapathon" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true"
+    aria-label="Mapathon 2026 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-mapathon'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1F_7T2t_Br5E7GWEMS8U2bgsgX4cNEtzj"
         alt="2nd Runner Up - Mapathon 2026" loading="lazy" width="1600" height="987">
     </div>
   </div>
-  <div id="modal-ignite" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Ignite 5.0 certificate" inert>
+  <div id="modal-ignite" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true"
+    aria-label="Ignite 5.0 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-ignite'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1eDiyJBh5is1G6S0i-5XnAyJRgR-A9hNJ"
         alt="Outstanding Leader - Ignite 5.0" loading="lazy" width="1600" height="1200">
     </div>
   </div>
-  <div id="modal-freshers" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true" aria-label="Fresher's Quest 2.0 certificate" inert>
+  <div id="modal-freshers" class="img-modal" onclick="closeModal(this)" role="dialog" aria-modal="true"
+    aria-label="Fresher's Quest 2.0 certificate" inert>
     <div class="img-modal-inner">
       <button class="img-modal-close" onclick="closeModal(document.getElementById('modal-freshers'))">&times;</button>
       <img src="https://lh3.googleusercontent.com/d/1k6UB0s1X3ipHJ4_q23zCuK0H0l04aR8D"
@@ -3119,7 +3374,7 @@
       <div class="v-head">
         <span class="v-eyebrow"><i></i>Featured Work · Programming Hero</span>
         <h3 class="v-title" id="video-modal-title">The Computer That Refused to Fail</h3>
-        <p class="v-hook">384,000 km from Earth, three lives depended on a computer with 4 KB of RAM,  weaker than the
+        <p class="v-hook">384,000 km from Earth, three lives depended on a computer with 4 KB of RAM, weaker than the
           chip of a phone charger. Moments before landing, it overloaded anyway.</p>
       </div>
 
@@ -3291,12 +3546,12 @@
     // Cert card tilt effect (skip if user prefers reduced motion)
     if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.querySelectorAll('.cert-card').forEach(card => {
+        const shine = card.querySelector('.cert-shine');
         card.addEventListener('mousemove', e => {
           const rect = card.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width - 0.5;
           const y = (e.clientY - rect.top) / rect.height - 0.5;
-          card.style.transform = `translateY(-4px) perspective(600px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
-          const shine = card.querySelector('.cert-shine');
+          card.style.transform = `perspective(600px) translateY(-4px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
           if (shine) {
             shine.style.left = `${e.clientX - rect.left - rect.width}px`;
             shine.style.top = `${e.clientY - rect.top - rect.height}px`;
@@ -3304,6 +3559,11 @@
         }, { passive: true });
         card.addEventListener('mouseleave', () => {
           card.style.transform = '';
+          // reset the shine, otherwise it stays parked at the last cursor spot
+          if (shine) {
+            shine.style.left = '';
+            shine.style.top = '';
+          }
         });
       });
     }

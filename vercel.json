@@ -21,55 +21,97 @@
     {
       "source": "/LEB_practices",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
       ]
     },
     {
       "source": "/LEB_practices.png",
       "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=86400, immutable" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
       ]
     },
     {
       "source": "/academics/LEB/LEBPracticeQuestions.png",
       "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=86400, immutable" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
       ]
     },
     {
       "source": "/index.md",
       "headers": [
-        { "key": "Content-Type", "value": "text/markdown; charset=utf-8" },
-        { "key": "Vary", "value": "Accept" }
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept"
+        }
       ]
     },
     {
       "source": "/.well-known/api-catalog",
       "headers": [
-        { "key": "Content-Type", "value": "application/linkset+json" }
+        {
+          "key": "Content-Type",
+          "value": "application/linkset+json"
+        }
       ]
     },
     {
       "source": "/.well-known/api-catalog.json",
       "headers": [
-        { "key": "Content-Type", "value": "application/linkset+json" }
+        {
+          "key": "Content-Type",
+          "value": "application/linkset+json"
+        }
       ]
     },
     {
       "source": "/.well-known/mcp/server-card.json",
       "headers": [
-        { "key": "Content-Type", "value": "application/json; charset=utf-8" }
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
       ]
     },
     {
       "source": "/.well-known/agent-skills/index.json",
       "headers": [
-        { "key": "Content-Type", "value": "application/json; charset=utf-8" }
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        }
       ]
     },
     {
@@ -79,7 +121,10 @@
           "key": "Link",
           "value": "</.well-known/api-catalog>; rel=\"api-catalog\", </llms.txt>; rel=\"describedby\", </index.md>; rel=\"alternate\"; type=\"text/markdown\", </.well-known/mcp/server-card.json>; rel=\"mcp-server-card\", </.well-known/agent-skills/index.json>; rel=\"agent-skills\""
         },
-        { "key": "Vary", "value": "Accept" }
+        {
+          "key": "Vary",
+          "value": "Accept"
+        }
       ]
     }
   ]
