@@ -16,14 +16,6 @@
       "source": "/.well-known/api-catalog",
       "destination": "/.well-known/api-catalog.json"
     },
-    {
-      "source": "/LCP_JA",
-      "destination": "/LCP_JA/index.html"
-    },
-    {
-      "source": "/LCP_JA/",
-      "destination": "/LCP_JA/index.html"
-    }
   ],
   "headers": [
     {
@@ -43,14 +35,6 @@
     },
     {
       "source": "/academics/LEB/LEBPracticeQuestions.png",
-      "headers": [
-        { "key": "Content-Type", "value": "image/png" },
-        { "key": "Cache-Control", "value": "public, max-age=86400, immutable" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    },
-    {
-      "source": "/Light_Castle_Partners/og-preview-1200x630.png",
       "headers": [
         { "key": "Content-Type", "value": "image/png" },
         { "key": "Cache-Control", "value": "public, max-age=86400, immutable" },
