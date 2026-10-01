@@ -10,6 +10,7 @@ Jubayer Ahmad is a BBA student at IBA, University of Rajshahi who combines analy
 
 - [Portfolio](https://www.jubayer.pro/)
 - [Portfolio (Markdown)](https://www.jubayer.pro/index.md)
+- [CV](https://www.jubayer.pro/cv)
 - [LinkedIn](https://linkedin.com/in/ahmadjubayer)
 - [Email](mailto:hi@jubayer.pro)
 

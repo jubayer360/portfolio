@@ -32,6 +32,23 @@
       ]
     },
     {
+      "source": "/cv/CV-OG-Cover.png",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/png"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, immutable"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    {
       "source": "/LEB_practices.png",
       "headers": [
         {

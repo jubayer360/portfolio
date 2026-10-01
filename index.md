@@ -148,6 +148,7 @@ I'm open to internships, part-time roles, and collaborative projects — especia
 
 - [Portfolio (HTML)](https://www.jubayer.pro/)
 - [Portfolio (Markdown)](https://www.jubayer.pro/index.md)
+- [CV](https://www.jubayer.pro/cv)
 - [LLM index](https://www.jubayer.pro/llms.txt)
 - [XML sitemap](https://www.jubayer.pro/sitemap.xml)
 
