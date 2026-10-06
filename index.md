@@ -6,7 +6,7 @@ Operations, brand strategy, and content — delivered at scale. I build systems,
 
 - 30K+ Lives Impacted
 - 4+ Years Leading
-- 5+ Orgs Led
+- 6+ Orgs Led
 
 ---
 
@@ -18,11 +18,18 @@ From spotting inefficiencies and designing smarter workflows — leveraging tool
 
 My experience spans large-scale operations management, content strategy, brand campaigns, quality assurance, and cross-functional team leadership.
 
-**Core competencies:** Google Workspace · SQL · Power BI · Looker · Apps Script · Video Editing · Leadership · Content Management · MS Office · Canva · Brand Management
+**Core competencies:** Product Operations · Google Workspace · SQL · Power BI · Looker · Apps Script · Video Editing · Leadership · Content Management · MS Office · Canva · Brand Management
 
 ---
 
 ## Experience
+
+### Product Operations Associate — Chorcha (Hybrid)
+*Oct 2026 – Present*
+
+- Improving the UX of the android app with **30K+ active users**
+- Coordinating with marketing, production, content and technical team
+- Maintaining flawless content distribution across web and android
 
 ### Marketing Intern — Programming Hero (Remote)
 *Sep 2025 – Jan 2026*

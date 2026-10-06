@@ -16,6 +16,7 @@ Jubayer Ahmad is a BBA student at IBA, University of Rajshahi who combines analy
 
 ## Experience
 
+- [Product Operations Associate — Chorcha](https://www.jubayer.pro/#experience) (Oct 2026 – Present): Improving Android app UX for 30K+ active users, coordinating cross-functional teams, and maintaining content distribution across web and Android.
 - [Marketing Intern — Programming Hero](https://www.jubayer.pro/#experience) (Sep 2025 – Jan 2026): Created impactful content, managed social media presence, and optimized campaigns for the Web Development bootcamp.
 - [Branch Incharge — ACHIEVE Exam Center](https://www.jubayer.pro/#experience) (Sep 2024 – Feb 2025): Led the full launching operations managing 1,300+ enrolled students with 400-600 daily attendance.
 - [Course Coordinator — Academy of Champion Students](https://www.jubayer.pro/#experience) (Feb 2024 – Sep 2024): Managed content distribution pipeline reaching 5,000+ active learners daily.
@@ -44,7 +45,7 @@ Jubayer Ahmad is a BBA student at IBA, University of Rajshahi who combines analy
 ## Skills
 
 - **Technical & Tools:** Google Workspace, Google Apps Script, SQL, Power BI, Looker, Video Editing, MS Office, Canva
-- **Leadership & Strategy:** Leadership, Brand Management, Content Management, Analytical Ability, Team Coordination, Community Building, Content Strategy, Project Management
+- **Leadership & Strategy:** Product Operations, Leadership, Brand Management, Content Management, Analytical Ability, Team Coordination, Community Building, Content Strategy, Project Management
 
 ## Education
 
