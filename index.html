@@ -771,10 +771,10 @@
 
     .tl-marker {
       position: absolute;
-      left: -32px;
-      top: 10px;
-      width: 10px;
-      height: 10px;
+      left: -34px;
+      top: 8px;
+      width: 14px;
+      height: 14px;
       border-radius: 50%;
       background: var(--bg-secondary);
       border: 2px solid var(--accent);
@@ -782,9 +782,23 @@
       transition: background 0.2s, box-shadow 0.2s;
     }
 
-    .tl-item:hover .tl-marker {
+    .tl-marker.active {
       background: var(--accent);
-      box-shadow: 0 0 12px var(--accent-glow);
+      animation: pulse-wave 2s infinite;
+    }
+
+    @keyframes pulse-wave {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6);
+      }
+
+      70% {
+        box-shadow: 0 0 0 10px rgba(37, 99, 235, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+      }
     }
 
     .tl-head {
@@ -3752,6 +3766,20 @@
         openVideoModal(false);
       }, AUTO_OPEN_DELAY);
     })();
+  </script>
+
+  <!-- Experience Timeline Animation -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const experiences = document.querySelectorAll(".tl-item");
+      experiences.forEach(exp => {
+        const dateText = exp.querySelector(".tl-date")?.textContent.toLowerCase() || "";
+        if (dateText.includes("present")) {
+          const marker = exp.querySelector(".tl-marker");
+          if (marker) marker.classList.add("active");
+        }
+      });
+    });
   </script>
 
   <!-- Vercel Web Analytics -->
