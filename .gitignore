@@ -3,3 +3,6 @@ node_modules/
 .vscode/
 .vercel
 Jubayer_CV_IBA_RU.md
+
+# Shop assets and credentials: never deploy with the portfolio
+shop/

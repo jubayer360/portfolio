@@ -6,7 +6,7 @@ Operations, brand strategy, and content — delivered at scale. I build systems,
 
 - 30K+ Lives Impacted
 - 4+ Years Leading
-- 6+ Orgs Led
+- 7+ Orgs Led
 
 ---
 
@@ -25,20 +25,29 @@ My experience spans large-scale operations management, content strategy, brand c
 ## Experience
 
 ### Product Operations Associate — Chorcha (Hybrid)
-*Oct 2026 – Present*
+*Sep 2026 – Present*
 
-- Improving the UX of the android app with **30K+ active users**
-- Coordinating with marketing, production, content and technical team
-- Maintaining flawless content distribution across web and android
+- Improving the UX of the Android app with **30K+ active users**
+- Coordinating with marketing, production, content and technical teams
+- Maintaining flawless content distribution across web and Android
+- Testing the app, identifying flaws and areas of improvement, and maintaining reporting & documentation
+
+### Leadership Facilitator — Bangladesh Youth Leadership Center (BYLC) (Hybrid · Contract)
+*Aug 2026 – Sep 2026*
+
+- Helped **70+ students** learn leadership and mentored 10 specifically to perform their best
+- Coordinated the offline and online classes and ensured effective learning for everyone
+- Maintained the systemic database and resource archive
 
 ### Marketing Intern — Programming Hero (Remote)
 *Sep 2025 – Jan 2026*
 
-- Created impactful content like [The Computer That Refused to Fail](https://youtu.be/EpAYtlnugR0) to attract and engage learners & managed social media presence
-- Collaborated with teams to optimize campaigns for the **Web Development bootcamp**
+- Created impactful content like [The Computer That Refused to Fail](https://www.facebook.com/reel/4847211368753031)
+- Built an [AI Content Assistant](https://mycontentassistant.vercel.app/) with 6 significant features to streamline content publishing that helped reach **30K+ audience**
+- Managed social media presence & collaborated with teams to optimize campaigns for the **Web Development bootcamp**
 - Engaged the community with programming related queries and discussions
 
-### Branch Incharge — ACHIEVE Exam Center (Onsite)
+### Branch Incharge — Academy of Champion Students (ACS) · ACHIEVE Exam Center (Onsite)
 *Sep 2024 – Feb 2025*
 
 - Led the full launching operations of ACS's first offline exam center, managing **1,300+ enrolled students** with 400-600 daily attendance
@@ -56,7 +65,7 @@ My experience spans large-scale operations management, content strategy, brand c
 - Managed cross-team communication with **11+ teachers and 15+ designers & typists** to ensure quality content delivery
 - Hosted live classes and managed content archive
 
-### Team Lead, Remote Coordinators — Apar's Classroom (Remote)
+### Team Lead, Remote Coordinators — Academy of Champion Students (ACS) · Apar's Classroom (Remote)
 *Feb 2021 – Aug 2022*
 
 - Led 7+ coordinators of crash courses for **30,000+ SSC & HSC students**

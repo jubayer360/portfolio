@@ -16,11 +16,12 @@ Jubayer Ahmad is a BBA student at IBA, University of Rajshahi who combines analy
 
 ## Experience
 
-- [Product Operations Associate — Chorcha](https://www.jubayer.pro/#experience) (Oct 2026 – Present): Improving Android app UX for 30K+ active users, coordinating cross-functional teams, and maintaining content distribution across web and Android.
-- [Marketing Intern — Programming Hero](https://www.jubayer.pro/#experience) (Sep 2025 – Jan 2026): Created impactful content, managed social media presence, and optimized campaigns for the Web Development bootcamp.
-- [Branch Incharge — ACHIEVE Exam Center](https://www.jubayer.pro/#experience) (Sep 2024 – Feb 2025): Led the full launching operations managing 1,300+ enrolled students with 400-600 daily attendance.
+- [Product Operations Associate — Chorcha](https://www.jubayer.pro/#experience) (Sep 2026 – Present): Improving Android app UX for 30K+ active users, coordinating cross-functional teams, maintaining content distribution across web and Android, and testing the app to identify flaws and maintain reporting.
+- [Leadership Facilitator — Bangladesh Youth Leadership Center (BYLC)](https://www.jubayer.pro/#experience) (Aug 2026 – Sep 2026): Helped 70+ students learn leadership and mentored 10 specifically, coordinated offline and online classes, and maintained the systemic database and resource archive.
+- [Marketing Intern — Programming Hero](https://www.jubayer.pro/#experience) (Sep 2025 – Jan 2026): Created impactful content, built an AI Content Assistant reaching 30K+ audience, managed social media presence, and optimized campaigns for the Web Development bootcamp.
+- [Branch Incharge — Academy of Champion Students (ACS) · ACHIEVE Exam Center](https://www.jubayer.pro/#experience) (Sep 2024 – Feb 2025): Led the full launching operations managing 1,300+ enrolled students with 400-600 daily attendance.
 - [Course Coordinator — Academy of Champion Students](https://www.jubayer.pro/#experience) (Feb 2024 – Sep 2024): Managed content distribution pipeline reaching 5,000+ active learners daily.
-- [Team Lead, Remote Coordinators — Apar's Classroom](https://www.jubayer.pro/#experience) (Feb 2021 – Aug 2022): Led 7+ coordinators of crash courses for 30,000+ SSC & HSC students.
+- [Team Lead, Remote Coordinators — Academy of Champion Students (ACS) · Apar's Classroom](https://www.jubayer.pro/#experience) (Feb 2021 – Aug 2022): Led 7+ coordinators of crash courses for 30,000+ SSC & HSC students.
 - [Team Lead, QAC — 10 Minute School](https://www.jubayer.pro/#experience) (Apr 2021 – May 2022): Executed quality assurance projects serving thousands of students nationwide.
 
 ## Achievements
